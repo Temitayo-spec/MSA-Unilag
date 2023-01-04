@@ -47,7 +47,7 @@ const SectonTwo = () => {
           className={styles.image__ctn}
         >
           <Image
-            src="/images/begin-with-us.jpg"
+            src="/images/begin_with_us.jpg"
             alt="begin with us"
             width={400}
             height={400}
