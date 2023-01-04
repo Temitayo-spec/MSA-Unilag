@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  transition: all 0.3s ease-out;
+  margin: 2em auto;
+}
+
+.wrapper a:first-child {
+  font-size: 3rem;
+  color: #00a;
+  font-size: 600;
+}
+
+.wrapper a:last-child {
+  font-size: 0.8rem;
+  color: #999;
+  align-self: flex-start;
+}
+
+.wrapper a:last-child:hover {
+  color: #00a;
+}
+
+.article {
+  height: 120px;
+  overflow: hidden;
+}
+
+.article p {
+  font-size: 1.2rem;
+  color: #999;
+  margin: 0.5em 0;
+}
+
+.wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
+}
+
+.card__content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5em 0;
+}

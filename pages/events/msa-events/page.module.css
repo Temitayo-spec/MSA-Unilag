@@ -1,0 +1,43 @@
+.banner {
+  height: 70vh;
+  background-color: #001a4a;
+  display: grid;
+  place-items: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  list-style: none;
+}
+
+.listItem {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listItem a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #001a4a;
+}
+
+.listItem p {
+  font-size: 1rem;
+  color: #001a4a;
+}

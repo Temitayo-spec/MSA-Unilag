@@ -1,0 +1,57 @@
+.wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 4em auto;
+  gap: 3em;
+}
+
+.lhs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.stats__ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.stats h1 {
+  color: #033d92;
+  font-size: 4.5rem;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.lhs h2 {
+  font-weight: 600;
+  color: #001a4a;
+}
+
+.lhs hr {
+  width: 25%;
+  height: 2px;
+  border: none;
+  background-color: #001a4a;
+  margin: 0.5em 0 1em;
+  border-radius: 10px;
+}
+
+.video {
+  width: 100%;
+  height: 70vh;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+}

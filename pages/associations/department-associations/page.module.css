@@ -1,0 +1,147 @@
+.wrapper {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.section__a {
+  padding: 2rem 0;
+  height: 60vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.lhs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lhs p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lhs h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #001a4a;
+}
+
+.rhs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rhs p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.section__b {
+  background: #f5f5f5;
+  margin: 2em 0;
+  padding: 2rem 0;
+}
+
+.branch {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  width: 90%;
+  margin: 2em auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  gap: 2rem;
+  background: #fff;
+}
+
+.branch__name {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.branch img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.branch__name h2 {
+  font-size: 2rem;
+  color: #001a4a;
+}
+
+.branch__name p {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.branch__name a {
+  margin-left: auto;
+}
+
+.branch__name a button {
+  background: #fff;
+  color: #001a4a;
+  padding: 1rem;
+  border: 1px solid #001a4a;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* an hover effect animation using the after pseudo-class*/
+.branch__name a button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001a4a;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.branch__name a button:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.branch__name a button:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .section__a {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lhs {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .rhs {
+    width: 100%;
+  }
+
+  .branch {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

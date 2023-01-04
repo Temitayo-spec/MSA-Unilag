@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

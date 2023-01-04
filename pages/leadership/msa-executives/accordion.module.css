@@ -1,0 +1,83 @@
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 3em auto;
+}
+
+.wrapper header h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #001a4a;
+  margin: 2em 0;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion__item button {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 3px solid #999;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.accordion__item button:hover {
+  background-color: #ccc;
+}
+
+.accordion__item button span {
+  font-size: 1.5rem;
+  color: #001a4a;
+  font-weight: 700;
+
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  font-size: 1rem;
+  color: #999;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.panel b {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 2.5em;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.active .icon {
+  transform: rotate(180deg);
+}
+
+.active button {
+  background-color: #ccc;
+}

@@ -1,0 +1,19 @@
+.banner {
+  height: 70vh;
+  background-color: #001a4a;
+  display: grid;
+  place-items: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}

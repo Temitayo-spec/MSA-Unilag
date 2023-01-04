@@ -1,0 +1,29 @@
+.banner {
+  height: 70vh;
+  background-color: #001a4a;
+  display: grid;
+  place-items: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  list-style: none;
+}
+
+.content a {
+  font-size: 1rem;
+  color: #001a4a;
+}

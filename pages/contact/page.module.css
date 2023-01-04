@@ -1,0 +1,151 @@
+.wrapper {
+  width: 100%;
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-color: #09408f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.banner p {
+  font-size: 1em;
+  color: white;
+  width: 80%;
+  margin: 1em 0;
+  letter-spacing: 1px;
+}
+
+.send__message__ctn {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
+  margin: 3em auto;
+  gap: 3em;
+}
+
+.lhs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.lhs .info {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.info .icon {
+  font-size: 2rem;
+  color: #666;
+}
+
+.info span {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #eee;
+}
+
+.form h1 {
+  font-size: 2rem;
+  color: #001a4a;
+}
+
+.form__inputs__ctn {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.form__group input {
+  width: 100%;
+  height: 3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 1em;
+  font-size: 1rem;
+  color: #666;
+}
+
+.form__group textarea {
+  width: 100%;
+  height: 5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 1.2rem;
+  color: #666;
+  resize: none;
+}
+
+.form button {
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  background-color: #09408f;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.form button:hover {
+  background-color: #001a4a;
+}
+
+@media screen and (max-width: 768px) {
+  .send__message__ctn {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lhs {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

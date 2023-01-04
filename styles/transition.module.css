@@ -1,0 +1,21 @@
+.transition__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #001a4a;
+  z-index: 9999;
+  transform: scaleY(0);
+}
+
+.transition__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}

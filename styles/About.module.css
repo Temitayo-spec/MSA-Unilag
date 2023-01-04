@@ -1,0 +1,189 @@
+.wrapper {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.banner {
+  background: url(/images/about-us.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  text-shadow: 0 0 10px #000;
+}
+
+.section__a {
+  margin: 4em auto;
+  width: 90%;
+  height: 70vh;
+  gap: 3em;
+  display: flex;
+}
+
+.section__a .lhs h1 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+  color: #001a4a;
+}
+
+.section__a .lhs hr {
+  width: 50%;
+  background: #001a4a;
+  height: 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+.section__a .rhs p {
+  font-size: 1.2rem;
+  color: #999;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.section__b {
+  background-color: #f5f5f5;
+  padding: 4em 0;
+}
+
+.inner {
+  margin: 4em auto;
+  width: 90%;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.quote img {
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.quote__text {
+  width: 50%;
+}
+
+.quote__text i {
+  font-family: 'Dancing Script', cursive;
+}
+
+.quote__text p {
+  font-size: 2rem;
+  color: #999;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__text p span {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #001a4a;
+}
+
+.quote__text p span:last-child {
+  margin-left: auto;
+}
+
+.quote__text h3 {
+  font-size: 1.5rem;
+  color: #001a4a;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+.our__mission {
+  margin: 8em 0;
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.our__mission .lhs h1 {
+  font-size: 3rem;
+  color: #001a4a;
+  margin-bottom: 0.5em;
+}
+
+.our__mission .lhs p {
+  font-size: 1.2rem;
+  color: #999;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.our__mission .lhs hr {
+  width: 30%;
+  background: #001a4a;
+  height: 3px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.our__mission .rhs {
+  width: 50%;
+}
+
+.our__mission .rhs img {
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.values {
+  display: flex;
+  gap: 4em;
+}
+
+.our__philosophy {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.our__philosophy h2,
+.core__values h2 {
+  font-size: 2rem;
+  color: #001a4a;
+  margin-bottom: 0.5em;
+}
+
+.our__philosophy p,
+.core__values p {
+  font-size: 1.2rem;
+  color: #999;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.our__philosophy hr,
+.core__values hr {
+  width: 30%;
+  background: #001a4a;
+  height: 3px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.core__values {
+  width: 50%;
+}
