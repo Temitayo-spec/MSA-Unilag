@@ -5,8 +5,8 @@ import gsap from 'gsap';
 import Transition from '../../components/Transition';
 
 const Page = () => {
-  const contact = gsap.timeline();
-  const contactCtn = useRef(null);
+  const contact = gsap.timeline(),
+    contactCtn = useRef(null);
 
   useEffect(() => {
     contact.to(

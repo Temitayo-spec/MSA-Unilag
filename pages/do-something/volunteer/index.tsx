@@ -4,8 +4,8 @@ import Transition from '../../../components/Transition';
 import styles from './page.module.css';
 
 const Page = () => {
-  const volunteer = gsap.timeline();
-  const volunteerCtn = useRef(null);
+  const volunteer = gsap.timeline(),
+    volunteerCtn = useRef(null);
 
   useEffect(() => {
     volunteer.to(
@@ -20,6 +20,7 @@ const Page = () => {
       '-=0.5'
     );
   });
+
   return (
     <>
       <Transition timeline={volunteer} text="Volunteer" />

@@ -4,8 +4,8 @@ import Transition from '../../../components/Transition';
 import styles from './page.module.css';
 
 const Page = () => {
-  const join_pr = gsap.timeline();
-  const join_prCtn = useRef(null);
+  const join_pr = gsap.timeline(),
+    join_prCtn = useRef(null);
 
   useEffect(() => {
     join_pr.to(
@@ -20,6 +20,7 @@ const Page = () => {
       '-=0.5'
     );
   });
+
   return (
     <>
       <Transition timeline={join_pr} text="Join PR" />

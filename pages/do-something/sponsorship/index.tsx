@@ -3,8 +3,8 @@ import Transition from '../../../components/Transition';
 import styles from './page.module.css';
 
 const Page = () => {
-  const sponsorship = gsap.timeline();
-  const sponsorshipCtn = useRef(null);
+  const sponsorship = gsap.timeline(),
+    sponsorshipCtn = useRef(null);
 
   useEffect(() => {
     sponsorship.to(
@@ -19,6 +19,7 @@ const Page = () => {
       '-=0.5'
     );
   });
+
   return (
     <>
       <Transition timeline={sponsorship} text="Sponsorship" />

@@ -4,8 +4,8 @@ import Transition from '../../../components/Transition';
 import styles from './page.module.css';
 
 const Page = () => {
-  const donations = gsap.timeline();
-  const donationsCtn = useRef(null);
+  const donations = gsap.timeline(),
+    donationsCtn = useRef(null);
 
   useEffect(() => {
     donations.to(
