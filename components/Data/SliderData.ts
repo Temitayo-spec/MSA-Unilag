@@ -1,30 +1,30 @@
 export const SliderData = [
   {
-    image: '/images/banner-one.JPG',
+    image: '/images/banner-one.jpg',
     alt: 'banner-one',
   },
   {
-    image: '/images/banner-two.JPG',
+    image: '/images/banner-two.jpg',
     alt: 'banner-two',
   },
   {
-    image: '/images/banner-three.JPG',
+    image: '/images/banner-three.jpg',
     alt: 'banner-three',
   },
   {
-    image: '/images/banner-four.JPG',
+    image: '/images/banner-four.jpg',
     alt: 'banner-four',
   },
   {
-    image: '/images/banner-five.JPG',
+    image: '/images/banner-five.jpg',
     alt: 'banner-five',
   },
   {
-    image: '/images/banner-six.JPG',
+    image: '/images/banner-six.jpg',
     alt: 'banner-six',
   },
   {
-    image: '/images/banner-seven.JPG',
+    image: '/images/banner-seven.jpg',
     alt: 'banner-seven',
   },
 ];
