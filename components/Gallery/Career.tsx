@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from './page.module.css';
+import styles from '../../pages/gallery/page.module.css';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
-import { excoData } from '../../components/Data/GalleryData';
+import { careerExpoData } from '../Data/GalleryData';
 
-const Exco = () => {
+const Career = () => {
   const [selectedId, setSelectedId] = useState<string>('');
 
   return (
     <div className={styles.exco__gallery}>
-      <h1>MSA Excos Inauguration Day</h1>
+      <h1>MSA Career Expo</h1>
       <p>
-        “Leadership is the capacity to translate vision into reality.” —Warren
-        Bennis
+        “The best way to predict the future is to create it.” — Abraham Lincoln
       </p>
       <div className={styles.gallery__ctn}>
-        {excoData.map((item, index) => {
+        {careerExpoData.map((item, index) => {
           return (
             <div className={styles.gallery__img} key={index}>
               <motion.div
@@ -51,4 +50,4 @@ const Exco = () => {
   );
 };
 
-export default Exco;
+export default Career;

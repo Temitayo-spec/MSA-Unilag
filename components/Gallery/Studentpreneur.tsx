@@ -1,20 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from './page.module.css';
+import styles from '../../pages/gallery/page.module.css';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
-import { facultyData } from '../../components/Data/GalleryData';
+import { studentpreneurData } from '../../components/Data/GalleryData';
 
-
-const Faculty = () => {
+const Studentpreneur = () => {
   const [selectedId, setSelectedId] = useState<string>('');
 
   return (
-    <div className={styles.faculty__gallery}>
-      <h1>Faculty of Management Sciences</h1>
-      <p>“Everything has beauty, but not everyone sees it.” - Confucius</p>
+    <div className={styles.exco__gallery}>
+      <h1>Studentpreneurship Challenge Program</h1>
+      <p>
+        “Studenpreneurship is the process of developing a business idea and a
+        business plan, and then launching a business while still in school.” —
+        Dr. A. K. Singh
+      </p>
       <div className={styles.gallery__ctn}>
-        {facultyData.map((item, index) => {
+        {studentpreneurData.map((item, index) => {
           return (
             <div className={styles.gallery__img} key={index}>
               <motion.div
@@ -47,6 +50,6 @@ const Faculty = () => {
       </AnimatePresence>
     </div>
   );
-}
+};
 
-export default Faculty
+export default Studentpreneur;

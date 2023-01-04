@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-import styles from './accordion.module.css';
-import { officersData } from './OfficersData';
+import styles from '../../styles/Eaccordion.module.css';
+import { officersData } from '../Data/OfficersData';
 
 const Accordion = () => {
   const [active, setActive] = useState(0);
@@ -9,9 +9,12 @@ const Accordion = () => {
     <div className={styles.wrapper}>
       <div className={styles.accordion}>
         {officersData.map((item, index) => (
-            <div className={`${styles.accordion__item} ${
-                active === index ? styles.active : ''
-          }`} key={index}>
+          <div
+            className={`${styles.accordion__item} ${
+              active === index ? styles.active : ''
+            }`}
+            key={index}
+          >
             <button
               type="button"
               onClick={() => {

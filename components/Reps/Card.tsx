@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './page.module.css';
+import styles from '../../pages/leadership/class-representatives/page.module.css';
 
 interface Props {
   data: {

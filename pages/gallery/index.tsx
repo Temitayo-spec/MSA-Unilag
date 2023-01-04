@@ -1,14 +1,8 @@
-'use client';
 import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
-import Faculty from './Faculty';
-import Exco from './Exco';
-import Orientation from './Orientation';
-import Career from './Career';
-import Studentpreneur from './Studentpreneur';
-import Dinner from './Dinner';
 import gsap from 'gsap';
 import Transition from '../../components/Transition';
+import { Career, Dinner, Exco, Faculty, Orientation, Studentpreneur } from '../../components/Gallery';
 
 const Page = () => {
   const gallery = gsap.timeline();

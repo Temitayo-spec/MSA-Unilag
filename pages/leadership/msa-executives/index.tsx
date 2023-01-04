@@ -1,25 +1,25 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
-import Accordion from './Accordion';
+import Accordion from '../../../components/Executives/Accordion';
 import styles from './page.module.css';
 import Transition from '../../../components/Transition';
 import { msaData } from '../../../components/Data/MsaData';
 import TeamCard from '../../../components/TeamCard';
 
 const Page = () => {
-  const [current, setCurrent] = useState(0);
-  const sliderData = [
-    {
-      bigText: 'MSA',
-      smallText: 'Management Science Association',
-    },
-    {
-      bigText: `The Zeniths'21`,
-      smallText:
-        'Integrity has always been our watch word and we are committed to delivering excellently on every promise.',
-    },
-  ];
+  // const [current, setCurrent] = useState(0);
+  // const sliderData = [
+  //   {
+  //     bigText: 'MSA',
+  //     smallText: 'Management Science Association',
+  //   },
+  //   {
+  //     bigText: `The Zeniths'21`,
+  //     smallText:
+  //       'Integrity has always been our watch word and we are committed to delivering excellently on every promise.',
+  //   },
+  // ];
 
   const executives = gsap.timeline();
   const executivesCtn = useRef(null);
@@ -36,44 +36,44 @@ const Page = () => {
       },
       '-=0.5'
     );
-  });
-
-  const length = sliderData.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 7000);
-    return () => clearInterval(interval);
   }, []);
 
-  if (!Array.isArray(sliderData) || sliderData.length <= 0) {
-    return null;
-  }
+  // const length = sliderData.length;
+
+  // const nextSlide = () => {
+  //   setCurrent(current === length - 1 ? 0 : current + 1);
+  // };
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 7000);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  // if (!Array.isArray(sliderData) || sliderData.length <= 0) {
+  //   return null;
+  // }
   return (
     <>
       <Transition timeline={executives} text="MSA Executives" />
       <div className={styles.wrapper} ref={executivesCtn}>
         <div className={styles.banner}>
-          {sliderData.map((slide, index) => {
-            return (
-              <div
-                className={index === current ? styles.slide : ''}
-                key={index}
-              >
-                {index === current && (
-                  <div className={styles.bannerText}>
-                    <h1>{slide.bigText}</h1>
-                    <p>{slide.smallText}</p>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+          {/* {sliderData.map((slide, index) => {
+            return ( */}
+          <div
+            className={styles.slide}
+            // key={index}
+          >
+            {/* {index === current && ( */}
+            <div className={styles.bannerText}>
+              <h1>MSA</h1>
+              <p>Management Science Association</p>
+            </div>
+            {/* )} */}
+          </div>
+          {/* );
+          })} */}
         </div>
         <main className={styles.main__content}>
           <header className={styles.header}>

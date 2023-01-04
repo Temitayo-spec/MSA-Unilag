@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Card from './Card';
+import Card from '../../../components/Reps/Card';
 import {
   classRepsFour,
   classRepsOne,
   classRepsThree,
   classRepsTwo,
-} from './ClassRepData';
+} from '../../../components/Data/ClassRepData';
 import styles from './page.module.css';
 import Transition from '../../../components/Transition';
 

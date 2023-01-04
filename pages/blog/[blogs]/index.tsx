@@ -2,7 +2,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { BlogData } from '../../../components/Data/BlogData';
-import { Content } from '../Content';
+import { Content } from '../../../components/Blog/Content';
 import styles from './page.module.css';
 
 interface Props {

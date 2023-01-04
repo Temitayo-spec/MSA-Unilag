@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import styles from './blogCard.module.css';
+import styles from '../../styles/BlogCard.module.css';
 import { Content } from './Content';
 
 interface Props {
