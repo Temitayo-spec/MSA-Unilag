@@ -31,7 +31,7 @@
   font-size: 4em;
   color: blue;
   height: 50px;
-} 
+}
 
 .quote span:nth-child(3) {
   margin-left: 90%;
@@ -52,4 +52,27 @@
 
 .image img:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lhs {
+    margin-bottom: 2rem;
+  }
+
+  .quote i {
+    font-size: 0.8em;
+  }
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+    height: 60vh;
+  }
 }

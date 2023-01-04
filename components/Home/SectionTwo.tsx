@@ -43,7 +43,7 @@ const SectonTwo = () => {
           variants={imageVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
           className={styles.image__ctn}
         >
           <Image
@@ -57,7 +57,7 @@ const SectonTwo = () => {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
           className={styles.content}
         >
           <motion.h1 variants={textVariants}>Learning Begins With Us</motion.h1>

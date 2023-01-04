@@ -55,3 +55,19 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .lhs {
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+    height: 50vh;
+  }
+}

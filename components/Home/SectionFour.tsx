@@ -37,7 +37,7 @@ const SectionFour = () => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 1 }}
+      viewport={{ once: false, amount: 0.5 }}
       className={styles.wrapper}
     >
       <motion.div className={styles.lhs}>

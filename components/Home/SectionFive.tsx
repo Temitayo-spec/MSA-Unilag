@@ -45,7 +45,7 @@ const SectionFive = () => {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.1 }}
         className={styles.content}
       >
         <motion.h1 variants={textVariants}>Upcoming Events</motion.h1>
@@ -54,7 +54,7 @@ const SectionFive = () => {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0 }}
           className={styles.events}
         >
           {cardData.map((item, index) => {

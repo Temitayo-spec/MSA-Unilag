@@ -67,3 +67,16 @@
 .content button:hover {
   background: #001a4a;
 }
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .image__ctn {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}

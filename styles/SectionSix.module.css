@@ -57,3 +57,13 @@
   background-color: #001a4a;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .content__text h1 {
+    font-size: 2.5em;
+  }
+
+  .content img {
+    object-fit: contain;
+  }
+}
