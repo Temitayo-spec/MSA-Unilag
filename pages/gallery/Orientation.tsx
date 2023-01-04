@@ -1,10 +1,9 @@
-'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { orientationData } from '../../components/GalleryData';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
+import { orientationData } from '../../components/Data/GalleryData';
 
 const Orientation = () => {
   const [selectedId, setSelectedId] = useState<string>('');

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { SliderData } from './Data/SliderData';
-import styles from './slider.module.css';
+import styles from '../styles/Slider.module.css';
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);

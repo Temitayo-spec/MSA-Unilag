@@ -1,10 +1,9 @@
-'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { dinnerData } from '../../components/GalleryData';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
+import { dinnerData } from '../../components/Data/GalleryData';
 
 const Dinner = () => {
   const [selectedId, setSelectedId] = useState<string>('');
