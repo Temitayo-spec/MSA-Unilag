@@ -1,3 +1,4 @@
+import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react';
 import Transition from '../../../components/Transition';
 import styles from './page.module.css';
@@ -22,7 +23,7 @@ const Page = () => {
   return (
     <>
       <Transition timeline={join_pr} text="Join PR" />
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} ref={join_prCtn}>
         <div className={styles.banner}>
           <h1>Join PR</h1>
         </div>

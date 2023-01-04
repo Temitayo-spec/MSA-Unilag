@@ -23,7 +23,7 @@ const Page = () => {
   return (
     <>
       <Transition timeline={dues} text="MSA Dues" />
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} ref={duesCtn}>
         <div className={styles.banner}>
           <h1>MSA Dues</h1>
         </div>
