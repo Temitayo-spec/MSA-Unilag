@@ -1,17 +1,14 @@
-'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { SliderData } from './Data/SliderData';
 import styles from '../styles/Slider.module.css';
 
 const Slider = () => {
-  const [current, setCurrent] = useState(0);
-
-  const length = SliderData.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+  const [current, setCurrent] = useState(0),
+    length = SliderData.length,
+    nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -41,7 +38,6 @@ const Slider = () => {
                   alt={slide.alt}
                   width={1000}
                   height={500}
-                  priority={true}
                 />
               )}
             </div>
