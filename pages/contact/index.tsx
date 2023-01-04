@@ -1,4 +1,3 @@
-'use client';
 import { useEffect, useRef } from 'react';
 import { CiLocationOn, CiMail, CiPhone } from 'react-icons/ci';
 import styles from './page.module.css';

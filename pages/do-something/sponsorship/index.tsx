@@ -1,14 +1,34 @@
-import React from 'react'
-import styles from './page.module.css'
+import React, { useEffect, useRef } from 'react';
+import Transition from '../../../components/Transition';
+import styles from './page.module.css';
 
-const page = () => {
+const Page = () => {
+  const sponsorship = gsap.timeline();
+  const sponsorshipCtn = useRef(null);
+
+  useEffect(() => {
+    sponsorship.to(
+      sponsorshipCtn.current,
+      {
+        duration: 0.5,
+        scaleY: 1,
+        opacity: 1,
+        ease: 'power3.out',
+        transformOrigin: 'top',
+      },
+      '-=0.5'
+    );
+  });
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.banner}>
-        <h1>Sponsorship</h1>
+    <>
+      <Transition timeline={sponsorship} text="Sponsorship" />
+      <div className={styles.wrapper}>
+        <div className={styles.banner}>
+          <h1>Sponsorship</h1>
+        </div>
       </div>
-    </div>
+    </>
   );
-}
+};
 
-export default page
+export default Page;

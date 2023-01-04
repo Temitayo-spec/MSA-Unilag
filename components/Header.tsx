@@ -88,8 +88,7 @@ const Header = () => {
               className={`${styles.drop__box} ${
                 dropdownTwo ? styles.active : ''
               } ${
-                pathname === '/events' ||
-                pathname?.includes('events')
+                pathname === '/events' || pathname?.includes('events')
                   ? styles.active__link
                   : ''
               }`}
@@ -165,7 +164,12 @@ const Header = () => {
             <div
               onClick={() => toggleDropdownFour()}
               className={`${styles.drop__box} ${
-                dropdownFour ? styles.active : ''
+                dropdownThree ? styles.active : ''
+              } ${
+                pathname === '/do-something' ||
+                pathname?.includes('do-something')
+                  ? styles.active__link
+                  : ''
               }`}
             >
               <p>Do Something</p>
@@ -182,7 +186,7 @@ const Header = () => {
               <Link onClick={closeDropdowns} href="/do-something/join-pr">
                 Join PR Team
               </Link>
-              <Link onClick={closeDropdowns} href="/do-somthing/sponsorship">
+              <Link onClick={closeDropdowns} href="/do-something/sponsorship">
                 Sponsorship
               </Link>
               <Link onClick={closeDropdowns} href="/do-something/donations">
