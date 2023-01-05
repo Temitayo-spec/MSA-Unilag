@@ -8,10 +8,11 @@ const SectionSix = () => {
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <Image
-          src="/images/faculty-officers.jpg"
+          src="/images/msa/msa-banner-clear-2.jpg"
           width={1000}
           height={1000}
           alt="faculty officers"
+          priority={true}
         />
         <div className={styles.content__text}>
           <h1>

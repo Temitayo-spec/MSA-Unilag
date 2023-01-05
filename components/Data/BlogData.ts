@@ -7,7 +7,7 @@ export const BlogData = [
                 Welcome to my blog. I'm glad you're here. I'm going to be writing about a lot of things, but mostly about life tips, and how to live a meaningful life. I'll also be writing about my experiences as a father, husband, and entrepreneur. I hope you enjoy it.
             </p>
         `,
-    author: 'John Doe',
+    author: 'Temitayo',
     date: '2020-01-01',
     category: 'Life Tips',
   },
@@ -49,7 +49,7 @@ Create that new version of yourself. How do they feel, how do they act, what do 
 
 Now become that person. Become the new being you conjured up.</p>
 `,
-    author: 'John Doe',
+    author: 'Temitayo',
     date: '2020-01-02',
     category: 'Life Tips',
   },
@@ -106,7 +106,7 @@ Creating the life you want means living it, as you create it.
 
 What will you create from this moment forward?</p>
 `,
-    author: 'Temitayo',
+    author: 'Victor',
     date: '2020-01-02',
     category: 'Life Tips',
   },

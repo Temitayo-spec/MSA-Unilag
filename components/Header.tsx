@@ -217,12 +217,12 @@ const Header = () => {
                   dropdownFour ? styles.active : ''
                 }`}
               >
-                <Link onClick={closeDropdowns} href="/do-something/volunteer">
+                {/* <Link onClick={closeDropdowns} href="/do-something/volunteer">
                   Volunteer
                 </Link>
                 <Link onClick={closeDropdowns} href="/do-something/join-pr">
                   Join PR Team
-                </Link>
+                </Link> */}
                 <Link onClick={closeDropdowns} href="/do-something/sponsorship">
                   Sponsorship
                 </Link>

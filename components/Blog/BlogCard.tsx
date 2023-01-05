@@ -16,7 +16,7 @@ const Card = ({ title, content, category, author }: Props) => {
       <Link href={`/blog/${title}`}>{title}</Link>
       <div className={styles.article}>
         <p>
-          Leave a comment/{category}/By {author}
+          Leave a comment / {category} / By {author}
         </p>
         <Content className={styles.card__content} content={content} />
       </div>
