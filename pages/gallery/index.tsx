@@ -32,8 +32,6 @@ const Page = () => {
           </header>
 
           <div className={styles.content}>
-            <Faculty />
-            <Exco />
             <Orientation />
             <Career />
             <Studentpreneur />
