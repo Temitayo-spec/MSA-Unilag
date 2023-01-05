@@ -40,7 +40,7 @@ const Page = () => {
             <div className={styles.info}>
               <CiPhone className={styles.icon} />
               <span>
-                <b>Call Us 24x7</b> <br /> President: +234 8152522529
+                <b>Call Us</b> <br /> President: +234 8152522529
                 <br /> Gen. Sec.: +234 8159749192
               </span>
             </div>
