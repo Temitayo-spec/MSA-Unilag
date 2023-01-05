@@ -7,12 +7,6 @@ interface FinsaData {
 
 export const finsaData: FinsaData[] = [
   {
-    id: 1,
-    name: 'Osuji Tobechukwu',
-    position: 'President',
-    src: '/images/finsa/Finsa-president.jpeg',
-  },
-  {
     id: 2,
     name: 'Malik Lawal',
     position: 'Vice President',

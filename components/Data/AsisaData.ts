@@ -7,12 +7,6 @@ interface AsisaData {
 
 export const asisaData: AsisaData[] = [
   {
-    id: 1,
-    name: 'Osunbiyi Yusuf Olatunji',
-    position: 'ASISA President',
-    src: '/images/asisa/asisa-president.jpg',
-  },
-  {
     id: 2,
     name: 'Olaoye Sumayyah',
     position: 'ASISA Vice President',

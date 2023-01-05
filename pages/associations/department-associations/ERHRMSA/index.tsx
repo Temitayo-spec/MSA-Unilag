@@ -40,6 +40,13 @@ const Page = () => {
             <h1>Our Team</h1>
             <p>ER&HRMSA EXECUTIVES 21/22 (THE SYNERGY)</p>
           </header>
+          <TeamCard
+            data={{
+              src: '/images/erhrmsa/ERHRMSA-President.jpg',
+              name: 'Ogunjimi Abiodun',
+              position: 'President',
+            }}
+          />
           <div className={styles.team__container}>
             {erhrmsaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

@@ -22,6 +22,29 @@
   flex-direction: column;
 }
 
+.logo__ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.7);
+  margin-right: 30px;
+}
+
+.img__ctn img {
+  object-fit: contain;
+}
+
+.logo__text {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #001a4a;
+}
+
 .percent {
   color: #001a4a;
 }
@@ -49,12 +72,6 @@
   background: #001a4a;
 }
 
-.heading img {
-  object-fit: cover;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
 .heading h1 {
   text-transform: uppercase;
   opacity: 0;
@@ -63,17 +80,23 @@
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
+  .logo__ctn {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+
+  .logo__text {
+    font-size: 0.7em;
+  }
+
   .heading {
     height: 100vh;
     flex-direction: column;
-  }
-
-  .heading img {
-    width: 100px;
-    height: 100px;
   }
 
   .heading h1 {

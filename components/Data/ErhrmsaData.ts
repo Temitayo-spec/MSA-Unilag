@@ -7,12 +7,6 @@ interface ErhrmsaData {
 
 export const erhrmsaData: ErhrmsaData[] = [
   {
-    id: 1,
-    name: 'Ogunjimi Abiodun',
-    position: 'President',
-    src: '/images/erhrmsa/ERHRMSA-President.jpg',
-  },
-  {
     id: 2,
     name: 'Bada Solomon',
     position: 'Vice President',

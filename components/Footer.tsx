@@ -78,12 +78,19 @@ const Footer = () => {
         </motion.div>
         <div className={styles.footer__content__bottom}>
           <div className={styles.footer__content__bottom__left}>
-            <Image
-              src="/images/msa-logo.jpg"
-              width={200}
-              height={200}
-              alt="msa-footer-logo"
-            />
+            <div className={styles.logo__ctn}>
+              <Link href="/" className={styles.logo__ctn}>
+                <Image
+                  src="/images/MSA_LOGO.png"
+                  alt="msa-logo"
+                  width={260}
+                  height={260}
+                />
+              </Link>
+              <div className={styles.logo__text}>
+                <h6>Management students association</h6>
+              </div>
+            </div>
           </div>
           <motion.div
             variants={container}

@@ -16,12 +16,12 @@
 }
 
 .team__member img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 100%;
+  height: 40vh;
   object-fit: contain;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2) inset;
+  border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .team__member h3 {

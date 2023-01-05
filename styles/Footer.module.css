@@ -3,6 +3,21 @@
   padding: 2em 0;
 }
 
+.logo__ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  width: 100%;
+}
+
+.logo__text {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #001a4a;
+}
+
 .footer__content {
   margin-top: 5em;
   height: 70vh;
@@ -53,10 +68,9 @@
 }
 
 .footer__content__bottom__left img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .footer__content__bottom__middle {

@@ -37,6 +37,13 @@ const Page = () => {
             <h1>Our Team</h1>
             <p>FINSA EXECUTIVES 21/22 (THE SYNERGY)</p>
           </header>
+          <TeamCard
+            data={{
+              src: '/images/finsa/Finsa-president.jpeg',
+              name: 'Osuji Tobechukwu',
+              position: 'President',
+            }}
+          />
           <div className={styles.team__container}>
             {finsaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

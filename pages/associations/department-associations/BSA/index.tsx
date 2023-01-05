@@ -40,6 +40,13 @@ const Page = () => {
             <h1>Our Team</h1>
             <p>BSA EXECUTIVES 21/22 (THE SYNERGY)</p>
           </header>
+          <TeamCard
+            data={{
+              src: '/images/bsa/bsa-president.jpg',
+              name: 'Ayorinde Abiodun',
+              position: 'BSA President',
+            }}
+          />
           <div className={styles.team__container}>
             {bsaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

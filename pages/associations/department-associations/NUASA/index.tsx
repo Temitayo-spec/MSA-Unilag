@@ -38,6 +38,14 @@ const Page = () => {
             <h1>Our Team</h1>
             <p>NUASA EXECUTIVES 21/22 (THE SYNERGY)</p>
           </header>
+          <TeamCard
+            data={{
+              src: '/images/associations/nuasa-president.jpg',
+              name: 'Ogunbona I. Olamide',
+              position: 'President',
+              contact: '+234 705 288 6884',
+            }}
+          />
           <div className={styles.team__container}>
             {nuasaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

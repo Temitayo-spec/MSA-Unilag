@@ -78,8 +78,17 @@ const Page = () => {
         <main className={styles.main__content}>
           <header className={styles.header}>
             <h1>Our Team</h1>
-            <p>ASISA EXECUTIVES 21/22 (THE SYNERGY)</p>
+            <p>MSA EXECUTIVES 21/22 (THE ZENITH&apos;S)</p>
           </header>
+          <TeamCard
+            data={{
+              src: '/images/msa/msa-president.jpg',
+              name: 'Omolere Oluwafemi',
+              position: 'President',
+              department: 'Actuarial Science',
+              year: 'Year 4',
+            }}
+          />
           <div className={styles.team__container}>
             {msaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

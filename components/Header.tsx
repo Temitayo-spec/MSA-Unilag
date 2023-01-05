@@ -38,14 +38,19 @@ const Header = () => {
     <header className={styles.wrapper}>
       <div className={styles.inner}>
         <div className={styles.logo__ctn}>
-          <Link href="/" className={styles.logo__ctn}>
-            <Image
-              src="/images/msa-logo.jpg"
-              alt="msa-logo"
-              width={100}
-              height={100}
-            />
-          </Link>
+          <div className={styles.center}>
+            <Link href="/" className={styles.img__ctn}>
+              <Image
+                src="/images/MSA_LOGO.png"
+                alt="msa-logo"
+                width={70}
+                height={70}
+              />
+            </Link>
+            <div className={styles.logo__text}>
+              <h6>Management students association</h6>
+            </div>
+          </div>
           <div
             className={`${styles.burger} ${
               toggle ? styles.active__burger : ''

@@ -88,13 +88,19 @@ const Preloader = () => {
         </div>
       </div>
       <div ref={headingRef} className={styles.heading}>
-        <Image
-          ref={imageRef}
-          src="/images/msa-logo.jpg"
-          width={200}
-          height={200}
-          alt="msa-logo"
-        />
+        <div className={styles.logo__ctn} ref={imageRef}>
+          <div className={styles.img__ctn}>
+            <Image
+              src="/images/MSA_LOGO.png"
+              alt="msa-logo"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className={styles.logo__text}>
+            <h6>Management students association</h6>
+          </div>
+        </div>
         <h1 ref={textRef}>
           Management <br /> Students <br /> Association
         </h1>

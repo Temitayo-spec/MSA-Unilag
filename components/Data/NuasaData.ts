@@ -8,13 +8,6 @@ interface NuasaData {
 
 export const nuasaData: NuasaData[] = [
   {
-    id: 1,
-    name: 'Ogunbona I. Olamide',
-    position: 'President',
-    contact: '+234 705 288 6884',
-    src: '/images/associations/nuasa-president.jpg',
-  },
-  {
     id: 2,
     name: 'Jamiu Lateefah Ikeoluwa',
     position: 'Vice President',

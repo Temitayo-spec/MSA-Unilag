@@ -16,6 +16,27 @@
   background: #fff;
 }
 
+.logo__ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__text {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #001a4a;
+}
+
 .nav__ctn {
   width: 85%;
 }
@@ -215,10 +236,13 @@
   }
 
   .logo__ctn {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .center h6 {
+    display: none;
   }
 
   .logo__ctn img {

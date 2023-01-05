@@ -37,6 +37,15 @@ const Page = () => {
             <h1>Our Team</h1>
             <p>ASISA EXECUTIVES 21/22 (THE SYNERGY)</p>
           </header>
+          <div>
+            <TeamCard
+              data={{
+                src: '/images/asisa/asisa-president.jpg',
+                name: 'Osunbiyi Yusuf Olatunji',
+                position: 'ASISA President',
+              }}
+            />
+          </div>
           <div className={styles.team__container}>
             {asisaData.map((data) => {
               return <TeamCard data={data} key={data.name} />;

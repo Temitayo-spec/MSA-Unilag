@@ -7,12 +7,6 @@ interface BsaData {
 
 export const bsaData: BsaData[] = [
   {
-    id: 1,
-    name: 'Ayorinde Abiodun',
-    position: 'BSA President',
-    src: '/images/bsa/BSA-President.jpg',
-  },
-  {
     id: 2,
     name: 'Ilelakinwa Joshua',
     position: 'BSA Vice President',

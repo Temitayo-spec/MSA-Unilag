@@ -10,14 +10,6 @@ interface MsaData {
 export const msaData: MsaData[] = [
   {
     id: 1,
-    name: 'Omolere Oluwafemi',
-    position: 'President',
-    department: 'Actuarial Science',
-    year: 'Year 4',
-    src: '/images/msa/msa-president.jpg',
-  },
-  {
-    id: 2,
     name: 'Oladele Toyosi',
     position: 'Vice President',
     department: 'Accounting',
@@ -25,7 +17,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-vice-president.jpg',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Oladehinde Ibrahim',
     position: 'General Secretary',
     department: 'Insurance',
@@ -33,7 +25,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-general-secretary.jpg',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Emiantor Callista',
     position: 'Welfare Director',
     department: 'ER&HRM',
@@ -41,7 +33,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-welfare-director.jpg',
   },
   {
-    id: 5,
+    id: 4,
     name: 'Omoowo Fatima',
     position: 'Treasurer',
     department: 'Business Administration',
@@ -49,7 +41,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-treasurer.jpg',
   },
   {
-    id: 6,
+    id: 5,
     name: 'Anyigor Michael',
     position: 'Financial Secretary',
     department: 'Insurance',
@@ -57,7 +49,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-financial-secretary.jpg',
   },
   {
-    id: 7,
+    id: 6,
     name: 'Azeez Sekinat',
     position: 'Assistant General Secretary',
     department: 'Business Administration',
@@ -65,7 +57,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-asst.-general-secretary.jpg',
   },
   {
-    id: 8,
+    id: 7,
     name: 'Sanyaolu Olashile',
     position: 'Sports Secretary',
     department: 'Actuarial Science',
@@ -73,7 +65,7 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-sports-secretary.jpg',
   },
   {
-    id: 9,
+    id: 8,
     name: 'Ezeagwu Benita',
     position: 'Public Relations Officer',
     department: 'Accounting',
@@ -81,11 +73,11 @@ export const msaData: MsaData[] = [
     src: '/images/msa/msa-pro.jpg',
   },
   {
-    id: 10,
+    id: 9,
     name: 'Ayoola Victor',
     position: 'Social Secretary',
     department: 'ER&HRM',
     year: 'Year 4',
-    src: '/images/msa/msa-social-secretary.jpg',
+    src: '/images/msa/msa-social-sec.jpg',
   },
 ];
