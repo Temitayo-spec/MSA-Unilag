@@ -69,3 +69,45 @@
   color: #001a4a;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: 1em auto;
+  }
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__content h2 {
+    color: #001a4a;
+    font-size: 1.8rem;
+  }
+
+  .main__content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5em 0;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+  }
+
+  .bottom p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0.5em 0;
+  }
+
+  .content h1 {
+    color: #001a4a;
+    font-size: 1.5rem;
+  }
+}

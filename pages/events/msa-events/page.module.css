@@ -1,3 +1,8 @@
+.wrapper {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
 .banner {
   height: 70vh;
   background-color: #001a4a;
@@ -39,5 +44,5 @@
 
 .listItem p {
   font-size: 1rem;
-  color: #001a4a;
+  color: #999;
 }

@@ -187,3 +187,74 @@
 .core__values {
   width: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    letter-spacing: 3px;
+    backdrop-filter: blur(0);
+  }
+
+  .section__a {
+    flex-direction: column;
+    gap: 2em;
+    height: auto;
+  }
+
+  .quote {
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .quote img {
+    height: 60vh;
+    width: 95%;
+  }
+
+  .quote__text {
+    width: 100%;
+  }
+
+  .quote__text p {
+    font-size: 1.5rem;
+  }
+
+  .quote__text p span {
+    font-size: 3rem;
+  }
+
+  .quote__text h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  .our__mission {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .our__mission .lhs {
+    width: 100%;
+  }
+
+  .our__mission .rhs {
+    width: 100%;
+  }
+
+  .our__mission .rhs img {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .values {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .our__philosophy {
+    width: 100%;
+  }
+
+  .core__values {
+    width: 100%;
+  }
+}

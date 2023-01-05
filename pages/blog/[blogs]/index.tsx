@@ -1,4 +1,4 @@
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { BlogData } from '../../../components/Data/BlogData';
@@ -14,8 +14,10 @@ interface Props {
 // get the blog title from the url
 // filter the blog data to get the blog with the same title
 // render the blog
-const Page = ({ params: { blogs } }: Props) => {
+const Page = () => {
   const router = useRouter();
+  const { query } = useRouter();
+  const str = query.blogs as string;
   return (
     <div className={styles.wrapper}>
       <button type="button" onClick={() => router.back()}>
@@ -24,20 +26,18 @@ const Page = ({ params: { blogs } }: Props) => {
           <FaArrowLeft />
         </span>
       </button>
-      {BlogData.filter((item) => item.title === blogs.replace(/%20/g, ' ')).map(
-        (item, index) => {
-          return (
-            <div className={styles.main__content} key={index}>
-              <h2>{item.title}</h2>
-              <Content className={styles.content} content={item.content} />
-              <div className={styles.bottom}>
-                <p>{item.category}</p>
-                <p>{item.author}</p>
-              </div>
+      {BlogData.filter((item) => item.title === str).map((item, index) => {
+        return (
+          <div className={styles.main__content} key={index}>
+            <h2>{item.title}</h2>
+            <Content className={styles.content} content={item.content} />
+            <div className={styles.bottom}>
+              <p>{item.category}</p>
+              <p>{item.author}</p>
             </div>
-          );
-        }
-      )}
+          </div>
+        );
+      })}
     </div>
   );
 };

@@ -46,3 +46,24 @@
   font-weight: 700;
   color: #666;
 }
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .team__member img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .team__member h3 {
+    font-size: 1.2rem;
+  }
+
+  .team__member p {
+    font-size: 0.8rem;
+  }  
+}

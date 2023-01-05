@@ -49,3 +49,29 @@
   color: #666;
   margin: 0.5em 0;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 2rem;
+    margin: 1em auto;
+  }
+
+  .article {
+    height: 108px;
+  }
+
+  .article p {
+    font-size: 1rem;
+  }
+
+  .wrapper a:first-child {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .wrapper a:last-child {
+    font-size: 0.7rem;
+    margin-top: 0.5em;
+  }
+}

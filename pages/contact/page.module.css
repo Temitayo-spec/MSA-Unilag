@@ -140,6 +140,11 @@
     height: auto;
   }
 
+  .banner p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
   .lhs {
     width: 100%;
     margin-bottom: 2em;
@@ -147,5 +152,9 @@
 
   .form {
     width: 100%;
+  }
+
+  .info:last-child .icon {
+    font-size: 4rem;
   }
 }

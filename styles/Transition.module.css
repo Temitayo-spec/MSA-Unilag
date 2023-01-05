@@ -19,3 +19,9 @@
   color: #fff;
   letter-spacing: 0.1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .transition__inner {
+    font-size: 2rem;
+  }
+}
