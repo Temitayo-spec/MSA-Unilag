@@ -7,6 +7,8 @@ import { studentpreneurData } from '../../components/Data/GalleryData';
 
 const Studentpreneur = () => {
   const [selectedId, setSelectedId] = useState<string>('');
+  const [viewAll, setViewAll] = useState<boolean>(false);
+
 
   return (
     <div className={styles.exco__gallery}>
@@ -16,20 +18,27 @@ const Studentpreneur = () => {
         business plan, and then launching a business while still in school.” —
         Dr. A. K. Singh
       </p>
-      <div className={styles.gallery__ctn}>
-        {studentpreneurData.map((item, index) => {
-          return (
-            <div className={styles.gallery__img} key={index}>
-              <motion.div
-                layoutId={item.src}
-                onClick={() => setSelectedId(item.src)}
-              >
-                <Image src={item.src} alt="images" height={500} width={400} />
-              </motion.div>
-            </div>
-          );
-        })}
-      </div>
+      <button onClick={() => setViewAll(!viewAll)} className={styles.btn}>
+        {viewAll ? 'View Less' : 'View All'}
+      </button>
+      {viewAll ? (
+        <div className={styles.gallery__ctn}>
+          {studentpreneurData.map((item, index) => {
+            return (
+              <div className={styles.gallery__img} key={index}>
+                <motion.div
+                  layoutId={item.src}
+                  onClick={() => setSelectedId(item.src)}
+                >
+                  <Image src={item.src} alt="images" height={500} width={400} />
+                </motion.div>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        ''
+      )}
       <AnimatePresence>
         {selectedId && (
           <motion.div

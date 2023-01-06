@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 import Transition from '../../../components/Transition';
@@ -31,60 +32,122 @@ const Page = () => {
         </div>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <Link href="/gallery">MSA Career Expo</Link>
-            <p>
-              The MSA Career Expo is an annual event that brings together
-              students and employers from across the country. The event is a
-              great opportunity for students to meet with employers and learn
-              about the various career opportunities available to them. The
-              event is also a great opportunity for employers to meet with
-              students and learn about the various career opportunities
-              available to them.
-            </p>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/MSA-career-expo/expo-5.jpg"
+                alt="MSA Events"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">MSA Career Expo</Link>
+              <p>
+                The MSA Career Expo is an annual event that brings together
+                students and employers from across the country. The event is a
+                great opportunity for students to meet with employers and learn
+                about the various career opportunities available to them. The
+                event is also a great opportunity for employers to meet with
+                students and learn about the various career opportunities
+                available to them.
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
           </li>
           <li className={styles.listItem}>
-            <Link href="/gallery">
-              MSA Annual Entrpreneurship & Innovation Challenge
-            </Link>
-            <p>
-              The MSA Annual Entrpreneurship & Innovation Challenge is an annual
-              event that brings together students and employers from across the
-              country. The event is a great opportunity for students to meet
-              with employers and learn about the various career opportunities
-              available to them.
-            </p>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/MSA-studentpreneurship/studentpreneur-10.jpg"
+                alt="MSA Events"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">
+                MSA Annual Entrpreneurship & Innovation Challenge
+              </Link>
+              <p>
+                The MSA Annual Entrpreneurship & Innovation Challenge is an
+                annual event that brings together students and employers from
+                across the country. The event is a great opportunity for
+                students to meet with employers and learn about the various
+                career opportunities available to them.
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
           </li>
           <li className={styles.listItem}>
-            <Link href="/gallery">MSA & Jobberman Soft Skill Training</Link>
-            <p>
-              The MSA & Jobberman Soft Skill Training is an annual event that
-              brings together students and employers from across the country.
-              The event is a great opportunity for students to meet with
-              employers and learn about the various career opportunities
-              available to them.
-            </p>
+            <div className={styles.rhs}>
+              <Link href="#">MSA & Jobberman Soft Skill Training</Link>
+              <p>
+                The MSA & Jobberman Soft Skill Training is an annual event that
+                brings together students and employers from across the country.
+                The event is a great opportunity for students to meet with
+                employers and learn about the various career opportunities
+                available to them.
+              </p>
+            </div>
           </li>
           <li className={styles.listItem}>
-            <Link href="/gallery">
-              MSA Alumni Award And Networking Dinner and MSA Annual Dinner &
-              Award Night
-            </Link>
-            <p>
-              The MSA Alumni Award And Networking Dinner and MSA Annual Dinner &
-              Award Night is an annual event that brings together students and
-              employers from across the country. The event is a great
-              opportunity for students to meet with employers and learn about
-              the various career opportunities available to them.
-            </p>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/MSA-award-night/dsc-4.jpg"
+                alt="MSA Events"
+                width={350}
+                height={350}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">
+                MSA Alumni Award And Networking Dinner and MSA Annual Dinner &
+                Award Night
+              </Link>
+              <p>
+                The MSA Alumni Award And Networking Dinner and MSA Annual Dinner
+                & Award Night is an annual event that brings together students
+                and employers from across the country. The event is a great
+                opportunity for students to meet with employers and learn about
+                the various career opportunities available to them.
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
           </li>
           <li className={styles.listItem}>
-            <Link href="/gallery">MSA Fest</Link>
-            <p>
-              The MSA Fest is an annual event that brings together students and
-              employers from across the country. The event is a great
-              opportunity for students to meet with employers and learn about
-              the various career opportunities available to them.
-            </p>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/MSA-fest/msa-fest-4.jpg"
+                alt="MSA Events"
+                width={350}
+                height={350}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">MSA Fest</Link>
+              <p>
+                The MSA Fest is an annual event that brings together students
+                and employers from across the country. The event is a great
+                opportunity for students to meet with employers and learn about
+                the various career opportunities available to them.
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
           </li>
         </ul>
       </div>

@@ -117,6 +117,22 @@
   place-items: center;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background: #001a4a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: none;
+}
+
+.btn:hover {
+  background: #496aeb;
+}
+
 @media screen and (max-width: 768px) {
   .gallery__ctn {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
