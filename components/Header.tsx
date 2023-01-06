@@ -140,9 +140,9 @@ const Header = () => {
                 >
                   MSA Community Service
                 </Link>
-                <Link onClick={closeDropdowns} href="/events/msa-tutorials">
+                {/* <Link onClick={closeDropdowns} href="/events/msa-tutorials">
                   MSA Tutorials
-                </Link>
+                </Link> */}
                 <Link onClick={closeDropdowns} href="/events/msa-sports">
                   MSA Sports
                 </Link>

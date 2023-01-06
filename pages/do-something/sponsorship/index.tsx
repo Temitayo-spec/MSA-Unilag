@@ -1,3 +1,4 @@
+import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react';
 import Transition from '../../../components/Transition';
 import styles from './page.module.css';
