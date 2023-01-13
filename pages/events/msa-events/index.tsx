@@ -43,13 +43,18 @@ const Page = () => {
             <div className={styles.rhs}>
               <Link href="/gallery">MSA Career Expo</Link>
               <p>
-                The MSA Career Expo is an annual event that brings together
-                students and employers from across the country. The event is a
-                great opportunity for students to meet with employers and learn
-                about the various career opportunities available to them. The
-                event is also a great opportunity for employers to meet with
-                students and learn about the various career opportunities
-                available to them.
+                Career Expo is an annual conference organized by th Management
+                Students&apos; Association, a student body established with the
+                aim of providing academic and career support to its 5000
+                students in the Faculty of Management Sciences, University of
+                Lagos, by creating platforms for value transmission and personal
+                development, thereby promotiong youth employability and
+                sustainability. This conference for which is in its 7th year, is
+                aimed at creating a platform for its students to interact with
+                Industry experts, and also prepare its students for the future
+                ahead. Over the years, career expo has witnessed seasoned
+                speakers, industry experts, distinguised alumni across various
+                field, come grace this occasion.
               </p>
               <Link className={styles.link} href="/gallery">
                 <p>

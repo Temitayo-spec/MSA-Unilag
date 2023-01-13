@@ -75,3 +75,26 @@
   font-size: 1.2rem;
   color: #999;
 }
+
+@media screen and (max-width: 768px) {
+  .list {
+    width: 100%;
+  }
+
+  .lhs {
+    width: 100%;
+  }
+
+  .rhs {
+    width: 100%;
+  }
+
+  .listItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link {
+    align-self: flex-start;
+  }
+}
