@@ -210,63 +210,63 @@ export const studentpreneurData: IFaculty[] = [
 
 export const dinnerData: IFaculty[] = [
   {
-    src: '/images/MSA-award-night/dsc-1.jpg',
+    src: '/images/MSA-award-night/dsc_1.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-2.jpg',
+    src: '/images/MSA-award-night/dsc_2.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-3.jpg',
+    src: '/images/MSA-award-night/dsc_3.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-4.jpg',
+    src: '/images/MSA-award-night/dsc_4.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-5.jpg',
+    src: '/images/MSA-award-night/dsc_5.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-6.jpg',
+    src: '/images/MSA-award-night/dsc_6.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-7.jpg',
+    src: '/images/MSA-award-night/dsc_7.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-8.jpg',
+    src: '/images/MSA-award-night/dsc_8.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-9.jpg',
+    src: '/images/MSA-award-night/dsc_9.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-10.jpg',
+    src: '/images/MSA-award-night/dsc_10.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-11.jpg',
+    src: '/images/MSA-award-night/dsc_11.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-12.jpg',
+    src: '/images/MSA-award-night/dsc_12.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-13.jpg',
+    src: '/images/MSA-award-night/dsc_13.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-14.jpg',
+    src: '/images/MSA-award-night/dsc_14.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-15.jpg',
+    src: '/images/MSA-award-night/dsc_15.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-16.jpg',
+    src: '/images/MSA-award-night/dsc_16.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-17.jpg',
+    src: '/images/MSA-award-night/dsc_17.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-18.jpg',
+    src: '/images/MSA-award-night/dsc_18.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-19.jpg',
+    src: '/images/MSA-award-night/dsc_19.jpg',
   },
   {
-    src: '/images/MSA-award-night/dsc-20.jpg',
+    src: '/images/MSA-award-night/dsc_20.jpg',
   },
 ];
