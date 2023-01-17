@@ -11,6 +11,9 @@ interface Props {
 }
 
 const Card = ({ title, content, category, author }: Props) => {
+  const truncate = (str: string, n: number) => {
+    return str?.length > n ? str.substr(0, n - 1) + '...' : str;
+  };
   return (
     <div className={styles.wrapper}>
       <Link href={`/blog/${title}`}>{title}</Link>
@@ -18,7 +21,10 @@ const Card = ({ title, content, category, author }: Props) => {
         <p>
           Leave a comment / {category} / By {author}
         </p>
-        <Content className={styles.card__content} content={content} />
+        <Content
+          className={styles.card__content}
+          content={truncate(content, 200)}
+        />
       </div>
       <Link href={`/blog/${title}`}>Read More &gt;&gt;&gt;</Link>
     </div>
