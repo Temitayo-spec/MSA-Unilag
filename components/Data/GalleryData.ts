@@ -75,49 +75,49 @@ export const excoData: IFaculty[] = [
 
 export const orientationData: IFaculty[] = [
   {
-    src: '/images/orientation/orientation-1.jpg',
+    src: '/images/orientation/orientation_1.jpg',
   },
   {
-    src: '/images/orientation/orientation-2.jpg',
+    src: '/images/orientation/orientation_2.jpg',
   },
   {
-    src: '/images/orientation/orientation-3.jpg',
+    src: '/images/orientation/orientation_3.jpg',
   },
   {
-    src: '/images/orientation/orientation-4.jpg',
+    src: '/images/orientation/orientation_4.jpg',
   },
   {
-    src: '/images/orientation/orientation-5.jpg',
+    src: '/images/orientation/orientation_5.jpg',
   },
   {
-    src: '/images/orientation/orientation-6.jpg',
+    src: '/images/orientation/orientation_6.jpg',
   },
   {
-    src: '/images/orientation/orientation-7.jpg',
+    src: '/images/orientation/orientation_7.jpg',
   },
   {
-    src: '/images/orientation/orientation-8.jpg',
+    src: '/images/orientation/orientation_8.jpg',
   },
   {
-    src: '/images/orientation/orientation-9.jpg',
+    src: '/images/orientation/orientation_9.jpg',
   },
   {
-    src: '/images/orientation/orientation-10.jpg',
+    src: '/images/orientation/orientation_10.jpg',
   },
   {
-    src: '/images/orientation/orientation-11.jpg',
+    src: '/images/orientation/orientation_11.jpg',
   },
   {
-    src: '/images/orientation/orientation-12.jpg',
+    src: '/images/orientation/orientation_12.jpg',
   },
   {
-    src: '/images/orientation/orientation-13.jpg',
+    src: '/images/orientation/orientation_13.jpg',
   },
   {
-    src: '/images/orientation/orientation-14.jpg',
+    src: '/images/orientation/orientation_14.jpg',
   },
   {
-    src: '/images/orientation/orientation-15.jpg',
+    src: '/images/orientation/orientation_15.jpg',
   },
 ];
 

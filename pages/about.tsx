@@ -100,7 +100,7 @@ const Page = () => {
               </div>
               <div className={styles.rhs}>
                 <Image
-                  src="/images/orientation/orientation-8.jpg"
+                  src="/images/orientation/orientation_7.jpg"
                   width={400}
                   height={500}
                   alt="mission"
