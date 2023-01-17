@@ -1,0 +1,132 @@
+.wrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #001a4a;
+  padding: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: bounce 1s ease infinite;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.form__ctn {
+  position: absolute;
+  top: -225px;
+  right: 20px;
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  transition: all 0.5s ease;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  transform-origin: bottom right;
+  opacity: 0;
+}
+
+.form__ctn::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.form__ctn .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1em;
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form__ctn .form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+
+.form__ctn .form .input:focus {
+  outline: none;
+  border: 1px solid #001a4a;
+}
+
+.form__ctn .form .input::placeholder {
+  color: #ccc;
+}
+
+.form__ctn .form .btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #001a4a;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form__ctn .form .btn:hover {
+  background: #000;
+}
+
+.form__ctn .form .btn:focus {
+  outline: none;
+}
+
+.form__ctn .form h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #001a4a;
+}
+
+.form__ctn__active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__ctn {
+    width: 80vw;
+    right: 0;
+  }
+}

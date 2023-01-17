@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Transition from '../components/Transition';
 import Slider from '../components/Slider';
 import { SectionFive, SectionFour, SectionSix, SectionThree, SectionTwo } from '../components/Home';
+import NewsLetter from '../components/Home/NewsLetter';
 
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
   return (
     <>
       <Transition timeline={home} text="Home" />
+      <NewsLetter />
       <main ref={homeCtn} className={styles.main}>
         <section className={styles.section__a}>
           <motion.div className={styles.section__a__content}>

@@ -4,7 +4,7 @@ export const SliderData = [
     alt: 'banner-one',
   },
   {
-    image: '/images/Banner/banner-two.jpg',
+    image: '/images/MSA-award-night/dsc-5.jpg',
     alt: 'banner-two',
   },
   {
