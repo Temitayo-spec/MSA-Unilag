@@ -14,7 +14,7 @@ export const cardData = [
     alt: 'Career Expo',
   },
   {
-    src: '/images/MSA-award-night/dsc-10.jpg',
+    src: '/images/MSA-award-night/dsc_10.jpg',
     title: 'MSA Awards & Gala Night',
     description:
       'As a reward for academic, social, entrepreneurial, and innovative prowess, prime amongst the events organized by MSA is the Annual Awards and Gala event. The awards night is aimed at lauding the virtues of excellence for students, staffs, alumni, donors, and corporate organizations who have contributed exceptionally towards the goals of MSA by Educating, Engaging, Empowering and Exposing our students to a wonderful and positive experience in and out of the classroom.',
