@@ -44,10 +44,10 @@ const SectionFour = () => {
         <motion.h2 variants={textVariants} className={styles.quote}>
           <span>&quot;</span>
           <i>
-            The management Students organization is a non-profit org that is
+            The Management Students Organization is a non-profit Org that is
             saddled with the responsibility of catering for the total welfarism
             of her members. The association is made of up other departmental
-            associations namely: Asisa, BSA, Ermsa, Finsa, Nuasa.
+            associations namely: ASISA, BSA, ERMSA, FINSA, NUASA.
           </i>
           <span>&quot;</span>
         </motion.h2>

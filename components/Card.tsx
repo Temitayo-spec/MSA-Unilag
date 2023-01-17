@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../styles/Card.module.css';
 import { BsArrowRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface Props {
   src: string;
@@ -44,12 +45,14 @@ const Card = ({ src, alt, title, description }: Props) => {
         <motion.div className={styles.texts}>
           <motion.h2 variants={textVariants}>{title}</motion.h2>
           <motion.p variants={textVariants}>{description}</motion.p>
-          <motion.button variants={textVariants} type="button">
-            Learn More{' '}
-            <span>
-              <BsArrowRight className={styles.arrow} />
-            </span>
-          </motion.button>
+          <Link href="/events/msa-events">
+            <motion.button variants={textVariants} type="button">
+              Learn More{' '}
+              <span>
+                <BsArrowRight className={styles.arrow} />
+              </span>
+            </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>

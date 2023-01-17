@@ -23,7 +23,7 @@ const SectionThree = () => {
       opacity: 1,
     },
   };
-  
+
   const smallTextVariants = {
     hidden: { x: 50, opacity: 0 },
     visible: {
@@ -53,7 +53,7 @@ const SectionThree = () => {
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>4K+</motion.h1>
-            <motion.p variants={smallTextVariants}>Students Enrollments</motion.p>
+            <motion.p variants={smallTextVariants}>Students Members</motion.p>
           </motion.div>
           <motion.div
             variants={container}
@@ -63,7 +63,7 @@ const SectionThree = () => {
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>50+</motion.h1>
-            <motion.p variants={smallTextVariants}>Excos</motion.p>
+            <motion.p variants={smallTextVariants}>Executives</motion.p>
           </motion.div>
           <motion.div
             variants={container}
@@ -73,7 +73,9 @@ const SectionThree = () => {
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>40+</motion.h1>
-            <motion.p variants={smallTextVariants}>Events & Activities</motion.p>
+            <motion.p variants={smallTextVariants}>
+              Annual Events & Activities
+            </motion.p>
           </motion.div>
           <motion.div
             variants={container}
@@ -82,8 +84,8 @@ const SectionThree = () => {
             viewport={{ once: false, amount: 1 }}
             className={styles.stats}
           >
-            <motion.h1 variants={textVariants}>100+</motion.h1>
-            <motion.p variants={smallTextVariants}>Faculty Lecturers</motion.p>
+            <motion.h1 variants={textVariants}>50+</motion.h1>
+            <motion.p variants={smallTextVariants}>Corporate Partners</motion.p>
           </motion.div>
         </motion.div>
       </motion.div>

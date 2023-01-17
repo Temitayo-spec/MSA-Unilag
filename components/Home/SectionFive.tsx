@@ -31,21 +31,20 @@ const SectionFive = () => {
     },
   };
 
-  const imageVariants = {
-    hidden: { x: -20, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      duration: 1,
-    },
+  const truncatedText = (text: string) => {
+    if (text.length > 150) {
+      return text.substring(0, 150) + '...';
+    }
+    return text;
   };
+
   return (
     <div className={styles.wrapper}>
       <motion.div
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: false, amount: 0 }}
         className={styles.content}
       >
         <motion.h1 variants={textVariants}>Upcoming Events</motion.h1>
@@ -65,7 +64,7 @@ const SectionFive = () => {
                   src={item.src}
                   alt={item.alt}
                   title={item.title}
-                  description={item.description}
+                  description={truncatedText(item.description)}
                 />
               </motion.div>
             );

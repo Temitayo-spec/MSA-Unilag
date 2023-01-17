@@ -23,12 +23,13 @@
   font-weight: 500;
   color: #001a4a;
   margin: 0.5em 0;
+  text-transform: uppercase;
 }
 
 .texts p {
   font-size: 1rem;
   font-weight: 400;
-  color: #001a4a;
+  color: #666;
   margin: 0.5em 0;
 }
 

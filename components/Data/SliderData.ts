@@ -19,10 +19,10 @@ export const SliderData = [
     image: '/images/Banner/banner-five.jpg',
     alt: 'banner-five',
   },
-  {
-    image: '/images/Banner/banner-six.jpg',
-    alt: 'banner-six',
-  },
+  // {
+  //   image: '/images/Banner/banner-six.jpg',
+  //   alt: 'banner-six',
+  // },
   {
     image: '/images/Banner/banner-seven.jpg',
     alt: 'banner-seven',

@@ -91,6 +91,14 @@ const Page = () => {
             </div>
           </li>
           <li className={styles.listItem}>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/community-service.jpg"
+                alt="MSA FACULTY WEEK"
+                width={350}
+                height={350}
+              />
+            </div>
             <div className={styles.rhs}>
               <Link href="#">MSA & Jobberman Soft Skill Training</Link>
               <p>
@@ -112,16 +120,16 @@ const Page = () => {
               />
             </div>
             <div className={styles.rhs}>
-              <Link href="/gallery">
-                MSA Alumni Award And Networking Dinner and MSA Annual Dinner &
-                Award Night
-              </Link>
+              <Link href="/gallery">MSA AWARDS & GALA NIGHT</Link>
               <p>
-                The MSA Alumni Award And Networking Dinner and MSA Annual Dinner
-                & Award Night is an annual event that brings together students
-                and employers from across the country. The event is a great
-                opportunity for students to meet with employers and learn about
-                the various career opportunities available to them.
+                As a reward for academic, social, entrepreneurial, and
+                innovative prowess, prime amongst the events organized by MSA is
+                the Annual Awards and Gala event. The awards night is aimed at
+                lauding the virtues of excellence for students, staffs, alumni,
+                donors, and corporate organizations who have contributed
+                exceptionally towards the goals of MSA by Educating, Engaging,
+                Empowering and Exposing our students to a wonderful and positive
+                experience in and out of the classroom.
               </p>
               <Link className={styles.link} href="/gallery">
                 <p>
@@ -140,12 +148,90 @@ const Page = () => {
               />
             </div>
             <div className={styles.rhs}>
-              <Link href="/gallery">MSA Fest</Link>
+              <Link href="/gallery">MSA Fest 2.0</Link>
               <p>
-                The MSA Fest is an annual event that brings together students
-                and employers from across the country. The event is a great
-                opportunity for students to meet with employers and learn about
-                the various career opportunities available to them.
+                MSA Fest is a social festival-setting event organized annually
+                to create an avenue for students to socialize, make and meet
+                friends in a pleasurable environment while freely enjoying the
+                best of music, food, dance, games, and casual recreational
+                activities. And based on the timing of the event, MSA Fest
+                serves as a means of welcoming freshmen to the University of
+                Lagos and Staylites to a new session/semester. MSA Fest is an
+                extremely popular and desirable event in the Unilag community
+                that attracts the best and most vibrant youthful audience.As a
+                result, MSA Fest have established a place in the “typical”
+                unilag campus experience.
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
+          </li>
+          <li className={styles.listItem}>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/deans-cup.jpg"
+                alt="MSA Deans Cup"
+                width={350}
+                height={350}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">MSA DEAN&apos;S CUP</Link>
+              <p>
+                MSA Dean’s Cup is an annual sports festival which is a
+                socio-sporting event organized to strike a balance between
+                sporting activities and academics in the Faculty of Management
+                Sciences. Over the years, it is an extra-curricular aimed
+                towards bonding and networking among students of the faculty
+                through sport which not only cultivate the spirit of
+                sportsmanship amongst students of various departments of this
+                great faculty but will also help in the promotion of healthy
+                rivalry amongst students in the faculty. And as such, has become
+                a breeding ground for the discovery and horning of raw athletic
+                talent and prowess
+              </p>
+              <Link className={styles.link} href="/gallery">
+                <p>
+                  Go to <span>Gallery</span>
+                </p>
+              </Link>
+            </div>
+          </li>
+          <li className={styles.listItem}>
+            <div className={styles.lhs}>
+              <Image
+                src="/images/community-service.jpg"
+                alt="MSA FACULTY WEEK"
+                width={350}
+                height={350}
+              />
+            </div>
+            <div className={styles.rhs}>
+              <Link href="/gallery">MSA FACULTY WEEK 2023</Link>
+              <p>
+                MSA Faculty Week is a program of social expository, academic and
+                cultural activities organized annually to develop students of
+                the faculty of management science and other students of the
+                university in every phase of their lives. The weeklong program
+                is also aimed at creating an avenue for students to develop
+                essential extra-curricular skills and knowledge needed to
+                function best in the society, make and meet friends in a
+                pleasurable environment while freely enjoying the best of social
+                activities.
+              </p>
+              <p style={{
+                marginTop: '1rem',
+              }}>
+                MSA Faculty Week has become a long-standing social event with a
+                tradition of excellence held consecutively for the past 30
+                years. It is an extremely popular event and one of the most
+                anticipated annual event in the management students’ community
+                that naturally brings out the creative and vibrant side of
+                students who passionately engage in all the lined up
+                activities for the week.
               </p>
               <Link className={styles.link} href="/gallery">
                 <p>

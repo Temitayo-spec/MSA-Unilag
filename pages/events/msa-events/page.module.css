@@ -38,8 +38,8 @@
 }
 
 .lhs img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -47,7 +47,6 @@
 
 .listItem {
   display: flex;
-  align-items: center;
   gap: 2rem;
   background-color: #fff;
   padding: 1rem;
@@ -58,12 +57,12 @@
 .listItem a {
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.2rem;
   color: #001a4a;
 }
 
 .listItem p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #999;
 }
 
