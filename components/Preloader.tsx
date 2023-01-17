@@ -25,13 +25,16 @@ const Preloader = () => {
         duration: 2,
       }
     );
+
     tl.to(barRef.current, {
       opacity: 0,
       zIndex: -1,
     });
+
     tl.to(innerRef.current, {
       width: '0%',
     });
+
     tl.from(
       headingRef.current,
       {
@@ -39,6 +42,7 @@ const Preloader = () => {
       },
       '-=0.5'
     );
+
     tl.fromTo(
       imageRef.current,
       { opacity: 0, x: '-100%' },
@@ -49,6 +53,7 @@ const Preloader = () => {
       },
       '-=1'
     );
+    
     tl.to(textRef.current, {
       opacity: 1,
       textShadow: '0px 0px 20px #000',
