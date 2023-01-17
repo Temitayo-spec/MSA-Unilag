@@ -113,7 +113,7 @@ const Page = () => {
           <li className={styles.listItem}>
             <div className={styles.lhs}>
               <Image
-                src="/images/MSA-award-night/dsc-4.jpg"
+                src="/images/MSA-award-night/dsc_4.jpg"
                 alt="MSA Events"
                 width={350}
                 height={350}
@@ -141,7 +141,7 @@ const Page = () => {
           <li className={styles.listItem}>
             <div className={styles.lhs}>
               <Image
-                src="/images/MSA-fest/msa-fest-4.jpg"
+                src="/images/MSA-fest/msa_fest_4.jpg"
                 alt="MSA Events"
                 width={350}
                 height={350}

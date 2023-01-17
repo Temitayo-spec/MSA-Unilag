@@ -28,7 +28,7 @@ export const cardData = [
     alt: 'Community Outreach',
   },
   {
-    src: '/images/MSA-fest/msa-fest-5.jpg',
+    src: '/images/MSA-fest/msa_fest_5.jpg',
     title: 'MSA FEST 2.0',
     description:
       'MSA Fest is a social festival-setting event organized annually to create an avenue for students to socialize, make and meet friends in a pleasurable environment while freely enjoying the best of music, food, dance, games, and casual recreational activities. And based on the timing of the event, MSA Fest serves as a means of welcoming freshmen to the University of Lagos and Staylites to a new session/semester. MSA Fest is an extremely popular and desirable event in the Unilag community that attracts the best and most vibrant youthful audience.As a result, MSA Fest have established a place in the “typical” unilag campus experience.',
