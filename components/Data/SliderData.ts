@@ -4,7 +4,7 @@ export const SliderData = [
     alt: 'banner-one',
   },
   {
-    image: '/images/MSA-award-night/dsc-5.jpg',
+    image: '/images/Banner/banner-two.JPG',
     alt: 'banner-two',
   },
   {
@@ -19,12 +19,8 @@ export const SliderData = [
     image: '/images/Banner/banner-five.jpg',
     alt: 'banner-five',
   },
-  // {
-  //   image: '/images/Banner/banner-six.jpg',
-  //   alt: 'banner-six',
-  // },
   {
-    image: '/images/Banner/banner-seven.jpg',
-    alt: 'banner-seven',
+    image: '/images/Banner/banner-six.jpg',
+    alt: 'banner-six',
   },
 ];
