@@ -77,10 +77,6 @@
   width: 50%;
 }
 
-.quote__text i {
-  font-family: 'Dancing Script', cursive;
-}
-
 .quote__text p {
   font-size: 2rem;
   color: #999;
@@ -94,6 +90,7 @@
   font-size: 4.5rem;
   font-weight: 600;
   color: #001a4a;
+  font-family: 'Dancing Script', cursive;
 }
 
 .quote__text p span:last-child {
@@ -101,10 +98,11 @@
 }
 
 .quote__text h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #001a4a;
   text-transform: uppercase;
   margin-top: 0.5em;
+  font-weight: 600;
 }
 
 .our__mission {

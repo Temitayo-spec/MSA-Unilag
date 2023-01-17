@@ -66,7 +66,7 @@ export default function Home() {
                 This is where we teach students skills they need to transform
                 themselves, others, and our global communities.
               </motion.p>
-              <Link href="learn-more">
+              <Link href="/about">
                 <button>Learn More</button>
               </Link>
             </motion.div>
