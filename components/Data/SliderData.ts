@@ -4,7 +4,7 @@ export const SliderData = [
     alt: 'banner-one',
   },
   {
-    image: '/images/Banner/banner-two.JPG',
+    image: '/images/Banner/banner-two.jpg',
     alt: 'banner-two',
   },
   {
