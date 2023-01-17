@@ -1,6 +1,8 @@
 .wrapper {
   margin: 4em 0;
   height: 80vh;
+  background: url('/images/msa/msa-banner-clear-2.jpg') no-repeat top -450px center;
+  background-size: cover;
 }
 
 .content {

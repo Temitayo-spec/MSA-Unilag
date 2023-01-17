@@ -7,16 +7,16 @@ const SectionSix = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <Image
+        {/* <Image
           src="/images/msa/msa-banner-clear-2.jpg"
           width={1000}
           height={1000}
           alt="faculty officers"
           priority={true}
-        />
+        /> */}
         <div className={styles.content__text}>
           <h1>
-            Meet Your <br /> Faculty <br /> Officers<span>.</span>
+            MEET YOUR <br /> FACULTY <br /> LEADERS<span>.</span>
           </h1>
           <Link href="/leadership">
             <button type="button">Leadership</button>
