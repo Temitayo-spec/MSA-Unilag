@@ -9,6 +9,57 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.write__post {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #001a4a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.write__post:hover {
+  transform: scale(1.1);
+}
+
+.write__post::before {
+  content: 'Write a post';
+  position: absolute;
+  top: -60px;
+  left: -50px;
+  width: 100px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #001a4a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.write__post:hover::before {
+  opacity: 1;
+}
+
+.icon {
+  color: #fff;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;

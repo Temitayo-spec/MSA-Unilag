@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import styles from './page.module.css';
 import Transition from '../../components/Transition';
 import { BlogData } from '../../components/Data/BlogData';
+import Link from 'next/link';
+import { FaPencilAlt } from 'react-icons/fa';
 
 const Page = () => {
   const blog = gsap.timeline();
@@ -25,6 +27,11 @@ const Page = () => {
 
   return (
     <>
+      <div className={styles.write__post}>
+        <Link href="/blog/admin/login">
+          <FaPencilAlt className={styles.icon} />
+        </Link>
+      </div>
       <Transition timeline={blog} text="Blog" />
       <div className={styles.wrapper} ref={blogCtn}>
         <div className={styles.content}>
