@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useEffect, useState } from 'react';
 import Preloader from '../components/Preloader';
+import { RecoilRoot } from 'recoil';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [preloader, setPreloader] = useState(true);
@@ -19,11 +20,11 @@ export default function App({ Component, pageProps }: AppProps) {
         preloader ? (
           <Preloader />
         ) : (
-          <>
+          <RecoilRoot>
             <Header />
             <Component {...pageProps} />
             <Footer />
-          </>
+          </RecoilRoot>
         )
       }
     </>

@@ -34,3 +34,28 @@ a {
 ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.ql-snow:nth-child(2) {
+  width: 100% !important;
+  height: 50vh !important;
+  border: 1px solid #001a4a !important;
+  border-radius: 5px;
+  padding: 0 10px !important;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  color: #001a4a;
+}
+
+.ql-toolbar {
+  height: 40px !important;
+  width: 100% !important;
+  border: 1px solid #001a4a !important;
+  border-radius: 5px;
+}
