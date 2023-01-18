@@ -1,7 +1,7 @@
 import React from 'react';
-import { contentAtom } from '../atom/contentAtom';
+import { contentAtom } from '../../atom/contentAtom';
 import { useRecoilValue } from 'recoil';
-import styles from '../styles/Preview.module.css';
+import styles from '../../styles/Preview.module.css';
 
 const Preview = () => {
   const input = useRecoilValue(contentAtom);

@@ -62,6 +62,18 @@
   border: 1px solid rgb(114, 112, 112);
 }
 
+.publish__button button:nth-child(3) {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: none;
+}
+
+.publish__button button:nth-child(3):hover {
+  background-color: #fff;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+
 .form__group {
   display: flex;
   flex-direction: column;

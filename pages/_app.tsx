@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import { useEffect, useState } from 'react';
 import Preloader from '../components/Preloader';
 import { RecoilRoot } from 'recoil';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [preloader, setPreloader] = useState(true);
@@ -16,17 +18,26 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <>
-      {
-        preloader ? (
-          <Preloader />
-        ) : (
-          <RecoilRoot>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
-          </RecoilRoot>
-        )
-      }
+      {preloader ? (
+        <Preloader />
+      ) : (
+        <RecoilRoot>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </RecoilRoot>
+      )}
     </>
   );
 }
