@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import axios from 'axios';
 import BlogCard from '../../components/Blog/BlogCard';
@@ -10,8 +10,22 @@ import { FaPencilAlt } from 'react-icons/fa';
 import { blogAtom } from '../../atom/blogAtom';
 import { toast } from 'react-toastify';
 
-const Page = () => {
-  const [blogData, setBlogData] = useRecoilState(blogAtom);
+export const getServerSideProps = async () => {
+  const res = await axios.get(
+    `${
+      process.env.NEXT_PUBLIC_NODE_ENV === 'development'
+        ? 'http://localhost:3000'
+        : 'https://msaunilag.com'
+    }/api/blog/all_blogs`
+  );
+  return {
+    props: {
+      blogData: res.data,
+    },
+  };
+};
+
+const Page = ({ blogData }: any) => {
   const blog = gsap.timeline();
   const blogCtn = useRef(null);
 
@@ -27,19 +41,6 @@ const Page = () => {
       },
       '-=0.5'
     );
-  });
-
-  const getBlog = async () => {
-    try {
-      const res = await axios.get('/api/blog/all_blogs');
-      setBlogData(res.data);
-    } catch (err) {
-      toast.error('Something went wrong!');
-    }
-  };
-  useEffect(() => {
-    getBlog();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -55,8 +56,11 @@ const Page = () => {
           {blogData?.map(
             (
               item: {
-                _id: any; title: string; content: string; author: string 
-},
+                _id: any;
+                title: string;
+                content: string;
+                author: string;
+              },
               index: string | number
             ) => {
               return (
