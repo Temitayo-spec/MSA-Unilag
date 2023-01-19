@@ -6,27 +6,28 @@ import { Content } from './Content';
 interface Props {
   title: string;
   content: string;
-  category: string;
+  category?: string;
   author: string;
+  id: string;
 }
 
-const Card = ({ title, content, category, author }: Props) => {
+const Card = ({ title, content, category, author, id }: Props) => {
   const truncate = (str: string, n: number) => {
     return str?.length > n ? str.substr(0, n - 1) + '...' : str;
   };
   return (
     <div className={styles.wrapper}>
-      <Link href={`/blog/${title}`}>{title}</Link>
+      <Link href={`/blog/${id}`}>{title}</Link>
       <div className={styles.article}>
         <p>
-          Leave a comment / {category} / By {author}
+          Article By {author}
         </p>
         <Content
           className={styles.card__content}
           content={truncate(content, 200)}
         />
       </div>
-      <Link href={`/blog/${title}`}>Read More &gt;&gt;&gt;</Link>
+      <Link href={`/blog/${id}`}>Read More &gt;&gt;&gt;</Link>
     </div>
   );
 };

@@ -38,4 +38,5 @@ export default async function handler(
   });
 
   await newUser.save();
+  res.status(200).json({ msg: 'Registration success!' });
 }

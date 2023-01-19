@@ -33,7 +33,6 @@ const Header = () => {
       setToggle(false);
     };
 
-
   return (
     <header className={styles.wrapper}>
       <div className={styles.inner}>
@@ -71,7 +70,13 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li className={pathname === '/blog' ? styles.active__link : ''}>
+            <li
+              className={
+                pathname === '/blog' || pathname?.includes('blog')
+                  ? styles.active__link
+                  : ''
+              }
+            >
               <Link onClick={closeDropdowns} href="/blog">
                 Blog
               </Link>

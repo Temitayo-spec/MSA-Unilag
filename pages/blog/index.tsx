@@ -1,13 +1,17 @@
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
+import { useRecoilState } from 'recoil';
+import axios from 'axios';
 import BlogCard from '../../components/Blog/BlogCard';
 import gsap from 'gsap';
 import styles from './page.module.css';
 import Transition from '../../components/Transition';
-import { BlogData } from '../../components/Data/BlogData';
 import Link from 'next/link';
 import { FaPencilAlt } from 'react-icons/fa';
+import { blogAtom } from '../../atom/blogAtom';
+import { toast } from 'react-toastify';
 
 const Page = () => {
+  const [blogData, setBlogData] = useRecoilState(blogAtom);
   const blog = gsap.timeline();
   const blogCtn = useRef(null);
 
@@ -25,6 +29,19 @@ const Page = () => {
     );
   });
 
+  const getBlog = async () => {
+    try {
+      const res = await axios.get('/api/blog/all_blogs');
+      setBlogData(res.data);
+    } catch (err) {
+      toast.error('Something went wrong!');
+    }
+  };
+  useEffect(() => {
+    getBlog();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <div className={styles.write__post}>
@@ -35,17 +52,24 @@ const Page = () => {
       <Transition timeline={blog} text="Blog" />
       <div className={styles.wrapper} ref={blogCtn}>
         <div className={styles.content}>
-          {BlogData.map((item, index) => {
-            return (
-              <BlogCard
-                key={index}
-                title={item.title}
-                content={item.content}
-                category={item.category}
-                author={item.author}
-              />
-            );
-          })}
+          {blogData?.map(
+            (
+              item: {
+                _id: any; title: string; content: string; author: string 
+},
+              index: string | number
+            ) => {
+              return (
+                <BlogCard
+                  key={index}
+                  title={item.title}
+                  content={item.content}
+                  author={item.author}
+                  id={item._id}
+                />
+              );
+            }
+          )}
         </div>
       </div>
     </>
