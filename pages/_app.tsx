@@ -17,7 +17,10 @@ export default function App({ Component, pageProps }: AppProps) {
     }, 7000);
   }, []);
   return (
-    <>
+    <div style={{
+      opacity: 0,
+      overflow: 'hidden',
+    }}>
       {preloader ? (
         <Preloader />
       ) : (
@@ -38,6 +41,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </RecoilRoot>
       )}
-    </>
+    </div>
   );
 }
