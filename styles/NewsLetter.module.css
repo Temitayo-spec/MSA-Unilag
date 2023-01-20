@@ -126,7 +126,31 @@
 
 @media screen and (max-width: 768px) {
   .form__ctn {
-    width: 80vw;
+    width: 85vw;
     right: 0;
+    height: 35vh;
+  }
+
+  .form__ctn::after {
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  .form__ctn .form {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .form__ctn .form h2 {
+    font-size: 1.5em;
+  }
+
+  .form__ctn .form .btn {
+    font-size: 0.8em;
+  }
+
+  .form__ctn .form input {
+    height: 30px;
+    padding: 1.5em 1em;
   }
 }
