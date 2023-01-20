@@ -27,12 +27,13 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333 !important;
+  background: #001a4a !important;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 5px;
+  background: #ccc !important;
 }
 
 ::-webkit-scrollbar {

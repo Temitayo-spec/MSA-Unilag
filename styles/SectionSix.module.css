@@ -68,4 +68,9 @@
   .content img {
     object-fit: contain;
   }
+
+  .wrapper {
+    background: url('/images/msa/msa-banner-clear-2.jpg') no-repeat center center;
+    background-size: cover;
+  }
 }

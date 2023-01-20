@@ -108,6 +108,7 @@ const Footer = () => {
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/do-something">Do Something</Link>
+            <Link href="/pq_tutorial">PQs & Tutorial Questions</Link>
           </motion.div>
           <div className={styles.footer__content__bottom__right}>
             <Link href="">
