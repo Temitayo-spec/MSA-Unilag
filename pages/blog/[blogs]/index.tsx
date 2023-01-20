@@ -6,27 +6,23 @@ import { FaArrowLeft } from 'react-icons/fa';
 import { Content } from '../../../components/Blog/Content';
 import styles from './page.module.css';
 
-interface Props {
-  params: {
-    blogs: string;
+export const getServerSideProps = async (context: any) => {
+  const res = await axios.get(
+    `${
+      process.env.NEXT_PUBLIC_NODE_ENV === 'development'
+        ? 'http://localhost:3000'
+        : 'https://msaunilag.com'
+    }/api/blog/${context.params.blogs}`
+  );
+  return {
+    props: {
+      blog: res.data,
+    },
   };
-}
+};
 
-// get the blog title from the url
-// filter the blog data to get the blog with the same title
-// render the blog
-
-const Page = () => {
+const Page = ({ blog }: any) => {
   const router = useRouter();
-  const [blog, setBlog] = React.useState<any>(null);
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(`/api/blog/${router.query.blogs}`);
-      setBlog(result.data);
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <div className={styles.wrapper}>

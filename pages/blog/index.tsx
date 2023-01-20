@@ -7,8 +7,6 @@ import styles from './page.module.css';
 import Transition from '../../components/Transition';
 import Link from 'next/link';
 import { FaPencilAlt } from 'react-icons/fa';
-import { blogAtom } from '../../atom/blogAtom';
-import { toast } from 'react-toastify';
 
 export const getServerSideProps = async () => {
   const res = await axios.get(
@@ -41,7 +39,7 @@ const Page = ({ blogData }: any) => {
       },
       '-=0.5'
     );
-  }, []);
+  });
 
   return (
     <>
