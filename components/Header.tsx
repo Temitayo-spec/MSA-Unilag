@@ -9,27 +9,9 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const pathname = usePathname(),
-    [dropdownOne, setDropdownOne] = useState(false),
-    [dropdownTwo, setDropdownTwo] = useState(false),
-    [dropdownThree, setDropdownThree] = useState(false),
-    [dropdownFour, setDropdownFour] = useState(false),
-    toggleDropdownOne = () => {
-      setDropdownOne(!dropdownOne);
-    },
-    toggleDropdownTwo = () => {
-      setDropdownTwo(!dropdownTwo);
-    },
-    toggleDropdownThree = () => {
-      setDropdownThree(!dropdownThree);
-    },
-    toggleDropdownFour = () => {
-      setDropdownFour(!dropdownFour);
-    },
+    [dropdown, setDropdown] = useState(''),
     closeDropdowns = () => {
-      setDropdownOne(false);
-      setDropdownTwo(false);
-      setDropdownThree(false);
-      setDropdownFour(false);
+      setDropdown('');
       setToggle(false);
     };
 
@@ -88,9 +70,9 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => toggleDropdownOne()}
+                onClick={() => setDropdown('associations')}
                 className={`${styles.drop__box} ${
-                  dropdownOne ? styles.active : ''
+                  dropdown === 'associations' ? styles.active : ''
                 } ${
                   pathname === '/associations' ||
                   pathname?.includes('associations')
@@ -103,7 +85,7 @@ const Header = () => {
               </div>
               <div
                 className={`${styles.dropdown__content} ${
-                  dropdownOne ? styles.active : ''
+                  dropdown === 'associations' ? styles.active : ''
                 }`}
               >
                 <Link
@@ -119,9 +101,9 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => toggleDropdownTwo()}
+                onClick={() => setDropdown('events')}
                 className={`${styles.drop__box} ${
-                  dropdownTwo ? styles.active : ''
+                  dropdown === 'events' ? styles.active : ''
                 } ${
                   pathname === '/events' || pathname?.includes('events')
                     ? styles.active__link
@@ -133,7 +115,7 @@ const Header = () => {
               </div>
               <div
                 className={`${styles.dropdown__content} ${
-                  dropdownTwo ? styles.active : ''
+                  dropdown === 'events' ? styles.active : ''
                 }`}
               >
                 <Link onClick={closeDropdowns} href="/events/msa-events">
@@ -145,9 +127,9 @@ const Header = () => {
                 >
                   MSA Community Service
                 </Link>
-                {/* <Link onClick={closeDropdowns} href="/events/msa-tutorials">
-                  MSA Tutorials
-                </Link> */}
+                <Link onClick={closeDropdowns} href="/pq_tutorial">
+                  PQ & Tutorials
+                </Link>
                 <Link onClick={closeDropdowns} href="/events/msa-sports">
                   MSA Sports
                 </Link>
@@ -155,9 +137,9 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => toggleDropdownThree()}
+                onClick={() => setDropdown('leadership')}
                 className={`${styles.drop__box} ${
-                  dropdownThree ? styles.active : ''
+                  dropdown === 'leadership' ? styles.active : ''
                 } ${
                   pathname === '/leadership' || pathname?.includes('leadership')
                     ? styles.active__link
@@ -169,7 +151,7 @@ const Header = () => {
               </div>
               <div
                 className={`${styles.dropdown__content} ${
-                  dropdownThree ? styles.active : ''
+                  dropdown === 'leadership' ? styles.active : ''
                 }`}
               >
                 <Link
@@ -204,9 +186,9 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => toggleDropdownFour()}
+                onClick={() => setDropdown('do-something')}
                 className={`${styles.drop__box} ${
-                  dropdownFour ? styles.active : ''
+                  dropdown === 'do-something' ? styles.active : ''
                 } ${
                   pathname === '/do-something' ||
                   pathname?.includes('do-something')
@@ -219,7 +201,7 @@ const Header = () => {
               </div>
               <div
                 className={`${styles.dropdown__content} ${
-                  dropdownFour ? styles.active : ''
+                  dropdown === 'do-something' ? styles.active : ''
                 }`}
               >
                 {/* <Link onClick={closeDropdowns} href="/do-something/volunteer">
