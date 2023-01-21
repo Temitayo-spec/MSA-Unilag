@@ -46,7 +46,7 @@ export const bsaData: BsaData[] = [
     id: 8,
     name: 'Ihemeje David',
     position: 'BSA Sports Secretary',
-    src: '/images/bsa/BSA-Sport-Secretary.jpg',
+    src: '/images/bsa/BSA-Sport-secretary.jpg',
   },
   {
     id: 9,
@@ -58,6 +58,6 @@ export const bsaData: BsaData[] = [
     id: 10,
     name: 'Ezimoha Stephanie',
     position: 'BSA Assistant General Secretary',
-    src: '/images/bsa/BSA-Asst.-General-Secretary.jpg',
+    src: '/images/bsa/BSA-Asst.-General-secretary.jpg',
   },
 ];
