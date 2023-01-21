@@ -39,7 +39,7 @@ const Page = () => {
           </header>
           <TeamCard
             data={{
-              src: '/images/finsa/Finsa-president.jpeg',
+              src: '/images/finsa/Finsa-President.jpeg',
               name: 'Osuji Tobechukwu',
               position: 'President',
             }}
