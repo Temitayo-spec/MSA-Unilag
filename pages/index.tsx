@@ -63,8 +63,11 @@ export default function Home() {
                 Management <br /> Students <br /> Association
               </motion.h1>
               <motion.p variants={item}>
-                This is where we teach students skills they need to transform
-                themselves, others, and our global communities.
+                We have a culture that is modern, relevant, and inspiring to
+                students in our faculty so they can have a brighter future. We
+                are determined in our approach to learning, are creative in our
+                thought process, and bold in our ambitions and achievement of
+                our goals.
               </motion.p>
               <Link href="/about">
                 <button>Learn More</button>
