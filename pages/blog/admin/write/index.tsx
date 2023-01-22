@@ -33,7 +33,7 @@ const Write = () => {
       if (res.status === 200) {
         setLoading(false);
         toast.success(res.data.message);
-        router.push('/blog');
+        router.push('/admin');
       }
     } catch (err: any) {
       setLoading(false);

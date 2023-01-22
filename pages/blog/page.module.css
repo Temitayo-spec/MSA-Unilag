@@ -60,6 +60,13 @@
   font-size: 30px;
 }
 
+.no__post {
+  font-size: 20px;
+  color: #001a4a;
+  font-weight: 600;
+  margin: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;

@@ -37,6 +37,7 @@
   color: #001a4a;
   white-space: normal;
   word-wrap: break-word;
+  overflow-y: auto;
 }
 
 .preview__container .content:hover {

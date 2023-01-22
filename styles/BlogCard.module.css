@@ -13,7 +13,7 @@
 }
 
 .wrapper a:first-child {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #00a;
   font-size: 600;
 }
@@ -29,7 +29,7 @@
 }
 
 .article {
-  height: 120px;
+  height: 150px;
   overflow: hidden;
 }
 

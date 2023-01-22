@@ -24,7 +24,7 @@ const Card = ({ title, content, category, author, id }: Props) => {
         </p>
         <Content
           className={styles.card__content}
-          content={truncate(content, 200)}
+          content={truncate(content, 150)}
         />
       </div>
       <Link href={`/blog/${id}`}>Read More &gt;&gt;&gt;</Link>
