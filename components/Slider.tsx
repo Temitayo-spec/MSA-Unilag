@@ -38,7 +38,7 @@ const Slider = () => {
                   alt={slide.alt}
                   width={1000}
                   height={500}
-                  priority={true}
+                  priority
                 />
               )}
             </div>
