@@ -70,7 +70,13 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => setDropdown('associations')}
+                onClick={() => {
+                  if (dropdown === 'associations') {
+                    setDropdown('');
+                  } else {
+                    setDropdown('associations');
+                  }
+                }}
                 className={`${styles.drop__box} ${
                   dropdown === 'associations' ? styles.active : ''
                 } ${
@@ -101,7 +107,13 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => setDropdown('events')}
+                onClick={() => {
+                  if (dropdown === 'events') {
+                    setDropdown('');
+                  } else {
+                    setDropdown('events');
+                  }
+                }}
                 className={`${styles.drop__box} ${
                   dropdown === 'events' ? styles.active : ''
                 } ${
@@ -137,7 +149,13 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => setDropdown('leadership')}
+                onClick={() => {
+                  if (dropdown === 'leadership') {
+                    setDropdown('');
+                  } else {
+                    setDropdown('leadership');
+                  }
+                }}
                 className={`${styles.drop__box} ${
                   dropdown === 'leadership' ? styles.active : ''
                 } ${
@@ -186,7 +204,13 @@ const Header = () => {
             </li>
             <li className={styles.dropdown}>
               <div
-                onClick={() => setDropdown('do-something')}
+                onClick={() => {
+                  if (dropdown === 'do-something') {
+                    setDropdown('');
+                  } else {
+                    setDropdown('do-something');
+                  }
+                }}
                 className={`${styles.drop__box} ${
                   dropdown === 'do-something' ? styles.active : ''
                 } ${

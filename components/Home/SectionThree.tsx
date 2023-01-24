@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import styles from '../../styles/SectionThree.module.css';
 import { motion } from 'framer-motion';
@@ -37,7 +36,7 @@ const SectionThree = () => {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 1 }}
+        viewport={{ once: false, amount: 0.8 }}
         className={styles.lhs}
       >
         <motion.h2 variants={textVariants}>
@@ -49,7 +48,7 @@ const SectionThree = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>4K+</motion.h1>
@@ -59,7 +58,7 @@ const SectionThree = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>50+</motion.h1>
@@ -69,7 +68,7 @@ const SectionThree = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>40+</motion.h1>
@@ -81,7 +80,7 @@ const SectionThree = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
             className={styles.stats}
           >
             <motion.h1 variants={textVariants}>50+</motion.h1>
