@@ -110,7 +110,7 @@ const Footer = () => {
             <Link href="/do-something">Do Something</Link>
             <Link href="/pq_tutorial">PQs & Tutorial Questions</Link>
           </motion.div>
-          <div className={styles.footer__content__bottom__right}>
+          <div className={styles.footer__content__bottom__middle__icons}>
             <Link href="">
               <FaTwitter />
             </Link>
@@ -120,6 +120,13 @@ const Footer = () => {
             <Link href="">
               <FaInstagram />
             </Link>
+          </div>
+          <div className={styles.footer__content__bottom__right}>
+            <h6>Subscribe to our newsletter</h6>
+            <form action="#">
+              <input type="email" placeholder="Email Address" />
+              <button type="submit">Subscribe</button>
+            </form>
           </div>
         </div>
       </motion.div>

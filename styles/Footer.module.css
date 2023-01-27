@@ -28,7 +28,8 @@
 }
 
 .footer__content__top,
-.footer__content__bottom {
+.footer__content__bottom,
+.footer__content__bottom__middle__icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,7 +65,7 @@
 }
 
 .footer__content__bottom {
-  margin-top: 20px;
+  margin-top: 90px;
 }
 
 .footer__content__bottom__left img {
@@ -73,18 +74,67 @@
   object-fit: contain;
 }
 
-.footer__content__bottom__middle {
+.footer__content__bottom__middle,
+.footer__content__bottom__middle__icons {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
 
-.footer__content__bottom__right a {
+.footer__content__bottom__middle__icons a {
   font-weight: 400;
   font-size: 1rem;
   margin: 0.4em;
   color: blue;
+}
+
+.footer__content__bottom__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__content__bottom__right h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+  margin: 0.4em 0;
+}
+
+.footer__content__bottom__right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.footer__content__bottom__right form input {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.4em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.footer__content__bottom__right form button {
+  border: none;
+  outline: none;
+  padding: 0.4em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background: #001a4a;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.footer__content__bottom__right form button:hover {
+  background: #001a4a;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {

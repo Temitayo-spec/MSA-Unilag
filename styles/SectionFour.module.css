@@ -21,9 +21,10 @@
 .quote i {
   font-weight: 400;
   color: #666;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-size: 1.2em;
   margin-top: 0;
+  font-family: 'Dancing Script', cursive;
 }
 
 .quote span {
