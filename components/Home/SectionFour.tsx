@@ -44,10 +44,9 @@ const SectionFour = () => {
         <motion.h2 variants={textVariants} className={styles.quote}>
           <span>&quot;</span>
           <i>
-            The Management Students Organization is a non-profit Org that is
-            saddled with the responsibility of catering for the total welfarism
-            of her members. The association is made of up other departmental
-            associations namely: ASISA, BSA, ERMSA, FINSA, NUASA.
+            I welcome you to the official website of our great Association. It will interest you to know that this is a major development in the faculty which allow students have a pure glimpse of what is and is to come in making sure that the welfarism of MSAITES is promoted. Our mission remains to ensure that a more conducive and enabling learning environment is available at all time. 
+
+Alumni, individuals and corporate bodies are welcomed to support our noble cause us through donations and sponsorship, feel free kindly explore this website and let us know where you can come in.
           </i>
           <span>&quot;</span>
         </motion.h2>

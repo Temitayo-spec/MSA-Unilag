@@ -41,7 +41,7 @@ const Page = () => {
               <CiPhone className={styles.icon} />
               <span>
                 <b>Call Us</b> <br /> President: +234 8152522529
-                <br /> Gen. Sec.: +234 8159749192
+                <br /> Gen. Sec.: +234 8159749192
               </span>
             </div>
             <div className={styles.info}>
