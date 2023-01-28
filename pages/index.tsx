@@ -46,6 +46,7 @@ export default function Home() {
       '-=0.5'
     );
   });
+
   return (
     <>
       <Transition timeline={home} text="Home" />
