@@ -36,6 +36,7 @@ const Page = () => {
             <Career />
             <Studentpreneur />
             <Dinner />
+            
           </div>
         </div>
       </div>

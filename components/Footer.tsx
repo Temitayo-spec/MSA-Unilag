@@ -104,8 +104,8 @@ const Footer = () => {
           >
             <motion.h2 variants={textVariants}>Information</motion.h2>
             <motion.p variants={textVariants}>General Enquires</motion.p>
-            <motion.p variants={textVariants}>+234 8189749192</motion.p>
-            <motion.p variants={textVariants}>msaunilag@outlook.com</motion.p>
+            <motion.p variants={textVariants}>+234 7039753128</motion.p>
+            <motion.p variants={textVariants}>msaunilag22@gmail.com</motion.p>
           </motion.div>
         </motion.div>
         <div className={styles.footer__content__bottom}>
@@ -172,7 +172,7 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.footer__content__bottom__right}>
-            <h6>Subscribe to our newsletter</h6>
+            <h6>Subscribe to our Newsletter</h6>
             <form ref={form} onSubmit={onSubmit}>
               <input
                 type="email"

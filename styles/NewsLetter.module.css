@@ -91,6 +91,11 @@
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 0.5em 1em;
 }
 
 .form__ctn .form .btn:hover {

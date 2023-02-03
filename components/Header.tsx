@@ -139,9 +139,9 @@ const Header = () => {
                 >
                   MSA Community Service
                 </Link>
-                <Link onClick={closeDropdowns} href="/pq_tutorial">
+                {/* <Link onClick={closeDropdowns} href="/pq_tutorial">
                   PQ & Tutorials
-                </Link>
+                </Link> */}
                 <Link onClick={closeDropdowns} href="/events/msa-sports">
                   MSA Sports
                 </Link>
