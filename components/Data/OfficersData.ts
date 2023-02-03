@@ -61,21 +61,21 @@ to the next level. So when I had the opportunity to lead, I didn’t hesitate to
             <b>What Course are you studying?</b>
             <p>Business Administration</p>
             <b>What inspired you to run for (Your Post)?</b>
-            <p>As the first child of a family of 4, I had take up traits of leadership unconsciously because I had my siblings to look after. It has been part of me, although I’m a shy person, I just love participating generally, especially in the finance aspects, even in my department I was in charge of collected class dues and accounting for it, before I decided to take it up to the faculty level to run for the post of a Treasurer
-part of what inspired me to run for this post is accountability and my decision to make a difference</p>
+            <p>As the first child of a family of 4, I took up the traits of leadership unconsciously. Because, I had my siblings to look after. It has been part of me, although I’m a shy person, I just love participating generally, especially in the finance aspects, even in my department I was in charge of collecting class dues and accounting for it, before I decided to take it up to the faculty level to run for the post of a Treasurer.
+Part of what inspired me to run for this post is accountability and my decision to make a difference</p>
             <b>What’s the main thing you want to achieve this year?</b>
             <p>The main thing I want to achieve this year
 is self growth…. And I want to be a certified and experienced digital marketer</p>
             <b>What do you engage in/What skills do you possess outside of academics?</b>
-            <p>Asides academics, I’m a multipreneur. I’m into business, I sell perfumes, I’m an henna artiste and I also sew…. Anything business, I’m in 😊</p>
+            <p>Asides academics, I’m a multipreneur. I’m into business, I sell perfumes, I’m an henna artiste and I also sew…. Anything business, I’m in</p>
             <b>Aside from necessities, what one thing could you not go a day without?</b>
             <p>Asides academics… One thing I can’t do without is making money… very very important</p>
             <b>What are your hobbies outside of academics?</b>
-            <p>Hobbies outside academics… eating, cooking, sleeping, watching movies, reading and meeting people 🤗</p>
+            <p>Hobbies outside academics… eating, cooking, sleeping, watching movies, reading and meeting people</p>
             <b>If you could eat one meal for the rest of your life, what would it be?</b>
-            <p>Hmmmmmm…. Finding it hard to choose between rice and spag 😂</p>
+            <p>Hmmmmmm…. Finding it hard to choose between rice and spag</p>
             <b>Which of the MSA events are you looking forward to the most?</b>
-            <p>All the events…. I can’t even pick a favorite 😂😂</p>
+            <p>All the events…. I can’t even pick a favorite</p>
             <b>If you were a super-hero, what power would you want? Why?</b>
             <p>Superhero … 🤔</p>
         `,
@@ -117,16 +117,16 @@ is self growth…. And I want to be a certified and experienced digital marketer
                 <b>What do you engage in/What skills do you possess outside of academics?</b>
                 <p>Great communication/interpersonal skills, Writing, Drawing(fashion illustrations), and relevant technical skills</p>
                 <b>Aside from necessities, what one thing could you not go a day without?</b>
-                <p>My peace of mind( Anything stress I no like sha 🤲🏽) and making each day valuable to me.</p>
+                <p>My peace of mind( Anything stress I no like sha) and making each day valuable to me.</p>
                 <b>What are your hobbies outside of academics?</b>
-                <p>Listening to music, Learning new things, Surfing the web, Reading(news, novels) Writing articles, thinking😂, talking to friends.</p>
+                <p>Listening to music, Learning new things, Surfing the web, Reading(news, novels) Writing articles, thinking, talking to friends.</p>
                 <b>If you could eat one meal for the rest of your life, what would it be?</b>
-                <p>Noodlessss😭🤲🏽</p>
+                <p>Noodlessss</p>
                 <b>Which of the MSA events are you looking forward to the most?</b>
                 <p></p>
                 <b>If you were a super-hero, what power would you want? Why?</b>
                 <p>My mom/TheJoker, the ability to just create happiness and listen or read one’s mind lol
-Weird reasons, I’d say😂</p>
+Weird reasons, I’d say</p>
         `,
   },
   {
@@ -188,7 +188,7 @@ Weird reasons, I’d say😂</p>
                     <b>What’s the main thing you want to achieve this year?</b>
                     <p>Contribute to the growth of MSA in all areas!, I want our goodwill be a positive remark. I’m big on the growth on academics more I think.</p>
                     <b>What do you engage in/What skills do you possess outside of academics?</b>
-                    <p>I am into Product Management, Feel free to call me Tech babyyy, I’ll whine you too😂.
+                    <p>I am into Product Management, Feel free to call me Tech babyyy, I’ll whine you too.
 I can be a therapist sometimes.
 Ability to eat food and spend money is also a good skill.
 Finally, I’m your go-to person as far as you’re not asking me for money.</p>
