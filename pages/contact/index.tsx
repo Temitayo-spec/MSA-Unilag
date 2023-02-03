@@ -31,7 +31,7 @@ const Page = () => {
         <div className={styles.banner}>
           <h1>Contact Us</h1>
           <p>
-            Wish to enquire about the association, Events, extra - curricular
+            Want to enquire about the association, Events, extra - curricular
             activities or anything else? You can walk in during office hours,
             give us a call or simply submit the form here.
           </p>
