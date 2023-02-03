@@ -29,7 +29,7 @@
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: 3px solid #999;
+  border: 1px solid #999;
   outline: none;
   transition: 0.4s;
   display: flex;
@@ -68,4 +68,18 @@
 
 .active .icon {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .accordion__item button {
+    font-size: 1rem;
+  }
+
+  .panel p {
+    font-size: 0.8rem;
+  }
+
+  .accordion__item button span {
+    font-size: 1.2rem;
+  }
 }

@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Footer.module.css';
-import { FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa';
+import { FaArrowRight, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import Spinner from './Spinner';
 
 const Footer = () => {
   const container = {
@@ -24,6 +27,35 @@ const Footer = () => {
       x: 0,
       opacity: 1,
     },
+  };
+
+  const form = React.useRef() as React.MutableRefObject<HTMLFormElement>;
+
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const onSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        'service_w4f8u28',
+        'newsletter',
+        form.current,
+        'EWuEKQAQ7joA6C45N'
+      )
+      .then(
+        (result) => {
+          toast.success('Subscribed successfully');
+          setLoading(false);
+          form.current.reset();
+          setEmail('');
+        },
+        (error) => {
+          setLoading(false);
+          toast.error('Subscription failed');
+        }
+      );
   };
   return (
     <motion.footer className={styles.footer}>
@@ -123,9 +155,17 @@ const Footer = () => {
           </div>
           <div className={styles.footer__content__bottom__right}>
             <h6>Subscribe to our newsletter</h6>
-            <form action="#">
-              <input type="email" placeholder="Email Address" />
-              <button type="submit">Subscribe</button>
+            <form ref={form} onSubmit={onSubmit}>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button disabled={email.length < 1} type="submit">
+                Subscribe <span>{loading ? <Spinner /> : ''}</span>
+              </button>
             </form>
           </div>
         </div>

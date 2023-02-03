@@ -1,8 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CiLocationOn, CiMail, CiPhone } from 'react-icons/ci';
 import styles from './page.module.css';
 import gsap from 'gsap';
 import Transition from '../../components/Transition';
+import LargeSpinner from '../../components/LargeSpinner';
+import ContactForm from '../../components/Contact/ContactForm';
 
 const Page = () => {
   const contact = gsap.timeline(),
@@ -41,14 +43,14 @@ const Page = () => {
               <CiPhone className={styles.icon} />
               <span>
                 <b>Call Us</b> <br /> President: +234 8152522529
-                <br /> Gen. Sec.: +234 8159749192
+                <br /> Gen. Sec.: +234 8159749192
               </span>
             </div>
             <div className={styles.info}>
               <CiMail className={styles.icon} />
               <span>
                 <b>Write Us</b>
-                <br /> msaunilag@outlook.com
+                <br /> msaunilag@gmail.com
               </span>
             </div>
             <div className={styles.info}>
@@ -61,31 +63,7 @@ const Page = () => {
             </div>
           </div>
 
-          <form action="#" className={styles.form}>
-            <h1>Send A Message</h1>
-            <div className={styles.form__inputs__ctn}>
-              <div className={styles.grid}>
-                <div className={styles.form__group}>
-                  <label htmlFor="name">Name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div className={styles.form__group}>
-                  <label htmlFor="email">Email</label>
-                  <input type="email" name="email" id="email" />
-                </div>
-              </div>
-              <div className={styles.form__group}>
-                <label htmlFor="email">Subject</label>
-                <input type="text" name="text" id="subject" />
-              </div>
-
-              <div className={styles.form__group}>
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" />
-              </div>
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </>

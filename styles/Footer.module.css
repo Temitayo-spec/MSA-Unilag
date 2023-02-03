@@ -130,6 +130,9 @@
   background: #001a4a;
   cursor: pointer;
   align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
 }
 
 .footer__content__bottom__right form button:hover {
@@ -184,5 +187,24 @@
     font-size: 1.2rem;
     text-align: left;
     margin: 0.4em 0;
+  }
+
+  .footer__content__bottom__right {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .footer__content__bottom__right form {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .footer__content__bottom__right form button {
+    align-self: flex-start;
+  }
+
+  .footer__content__bottom__right form input {
+    width: 100%;
+    padding: 0.6em;
   }
 }
