@@ -14,7 +14,7 @@ const Accordion = () => {
         'At the right corner of the building after the old faculty building, opposite room 4&5.',
     },
     {
-      title: ' Are there departmental students association and how to I join?',
+      title: 'Are there departmental students association and how do I join?',
       content:
         'Yes, there are, NUASA (Nigerian Universities Accounting Students Association), BSA( Business students Association) ERHRMSA (Employment and Human relations Management students Association), FINSA( finance students association ), ASISA(Actuarial Sciences & Insurance students association), and you can join when you’re only in Year3 or Year4',
     },

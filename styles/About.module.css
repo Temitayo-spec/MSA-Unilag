@@ -84,6 +84,7 @@
   letter-spacing: 1px;
   display: flex;
   flex-direction: column;
+  font-family: 'Dancing Script', cursive;
 }
 
 .quote__text p span {

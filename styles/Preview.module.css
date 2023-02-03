@@ -50,3 +50,14 @@
   letter-spacing: 1px;
   color: #666;
 }
+
+.preview__container .content a {
+  color: #001a4a;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.preview__container .content a:hover {
+  color: #001a4a;
+  text-decoration: underline;
+}

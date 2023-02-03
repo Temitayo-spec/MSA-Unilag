@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 import LargeSpinner from '../../../components/LargeSpinner';
 import Preview from '../../../components/Blog/Preview';
 import { contentAtom, ContentAtomType } from '../../../atom/contentAtom';
+import { formats, modules } from '../../../config/module';
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 const Update = ({ blogData }: any) => {
@@ -95,6 +96,8 @@ const Update = ({ blogData }: any) => {
                 <label htmlFor="content">Content</label>
                 <ReactQuill
                   theme="snow"
+                  modules={modules}
+                  formats={formats}
                   className={styles.form__quill}
                   value={input.content}
                   onChange={(value) => setInput({ ...input, content: value })}
