@@ -270,3 +270,60 @@ export const dinnerData: IFaculty[] = [
     src: '/images/MSA-award-night/dsc_20.jpg',
   },
 ];
+
+export const festData: IFaculty[] = [
+  {
+    src: '/images/MSA-fest/msa_fest_1.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_2.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_3.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_4.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_5.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_6.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_7.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_8.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_9.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_10.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_11.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_12.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_13.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_14.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_15.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_16.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_17.jpg',
+  },
+  {
+    src: '/images/MSA-fest/msa_fest_18.jpg',
+  },
+];
