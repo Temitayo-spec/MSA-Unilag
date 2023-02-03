@@ -27,6 +27,10 @@ const Page = () => {
       <div className={styles.wrapper} ref={duesCtn}>
         <div className={styles.banner}>
           <h1>MSA Dues</h1>
+          <p>
+            Students can pay their faculty student Association dues to the MSA
+            OFFICE and make payments to the Treasurer.
+          </p>
         </div>
       </div>
     </>

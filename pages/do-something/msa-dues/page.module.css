@@ -7,13 +7,23 @@
 .banner {
   height: 70vh;
   background-color: #001a4a;
-  display: grid;
-  place-items: center;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .banner h1 {
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
-  text-align: center;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 40%;
+  letter-spacing: 1px;
 }
