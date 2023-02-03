@@ -5,7 +5,6 @@ import 'react-quill/dist/quill.snow.css';
 import styles from './page.module.css';
 import { useRecoilState } from 'recoil';
 import { toast } from 'react-toastify';
-
 // dynamically import ReactQuill
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
@@ -21,7 +20,6 @@ const Update = ({ blogData }: any) => {
   const [loading, setLoading] = useState<boolean>(false);
   const cookie = new Cookies();
   const router = useRouter();
-
 
   useEffect(() => {
     setInput({
