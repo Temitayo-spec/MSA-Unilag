@@ -143,15 +143,33 @@ const Footer = () => {
             <Link href="/pq_tutorial">PQs & Tutorial Questions</Link>
           </motion.div>
           <div className={styles.footer__content__bottom__middle__icons}>
-            <Link href="">
+            <a
+              href="https://twitter.com/msaunilag
+"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              rel="noreferrer"
+            >
               <FaTwitter />
-            </Link>
-            <Link href="">
+            </a>
+            <a
+              href="https://www.tiktok.com/@msaunilag?lang=en"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              rel="noreferrer"
+            >
               <FaTiktok />
-            </Link>
-            <Link href="">
+            </a>
+            <a
+              href="
+                https://www.instagram.com/msaunilag/?hl=en
+              "
+              target="_blank"
+              referrerPolicy="no-referrer"
+              rel="noreferrer"
+            >
               <FaInstagram />
-            </Link>
+            </a>
           </div>
           <div className={styles.footer__content__bottom__right}>
             <h6>Subscribe to our newsletter</h6>
