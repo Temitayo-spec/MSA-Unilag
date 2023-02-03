@@ -13,8 +13,7 @@ const Fest = () => {
     <div className={styles.exco__gallery}>
       <h1>MSA Fest.</h1>
       <p>
-        “ The best way to predict the future is to create it. ” — Abraham
-        Lincoln
+        “Live life, have Fun.” — Benita Eseagwu.
       </p>
       <button onClick={() => setViewAll(!viewAll)} className={styles.btn}>
         {viewAll ? 'View Less' : 'View All'}

@@ -66,7 +66,7 @@ export const msaData: MsaData[] = [
   },
   {
     id: 8,
-    name: 'Ezeagwu Benita',
+    name: 'Eseagwu Benita',
     position: 'Public Relations Officer',
     department: 'Accounting',
     year: 'Year 4',
