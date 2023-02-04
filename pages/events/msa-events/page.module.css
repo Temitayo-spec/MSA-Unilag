@@ -96,4 +96,22 @@
   .link {
     align-self: flex-start;
   }
+
+  .lhs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .listItem a {
+    font-size: 2rem;
+  }
+
+  .listItem p {
+    font-size: 1rem;
+  }
+
+  .link p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 }

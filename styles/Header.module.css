@@ -177,10 +177,6 @@
     color: #fff;
   }
 
-  .nav__links li a:hover {
-    color: #fff;
-  }
-
   .active__nav {
     transform: translateX(0);
     transition: 0.3s ease-in-out;
@@ -207,10 +203,6 @@
     color: #fff;
   }
 
-  .dropdown:hover .drop__box p {
-    color: #fff;
-  }
-
   .dropdown__content {
     width: 300px;
   }
@@ -230,7 +222,6 @@
   }
 
   .active p {
-    color: #001a4a;
     font-weight: 700;
     font-size: 1.5em;
   }
