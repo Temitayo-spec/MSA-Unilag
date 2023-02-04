@@ -199,6 +199,10 @@
     height: auto;
   }
 
+  .section__a .rhs p {
+    font-size: 1rem;
+  }
+
   .quote {
     flex-direction: column-reverse;
     gap: 2em;
@@ -255,5 +259,13 @@
 
   .core__values {
     width: 100%;
+  }
+  .our__mission .lhs p {
+    font-size: 1rem;
+  }
+  
+  .our__philosophy p,
+  .core__values p {
+    font-size: 1rem;
   }
 }
