@@ -115,9 +115,9 @@ export const classRepsFour: ClassRepData[] = [
     contact: '08180597823',
   },
   {
-    name: 'Ayoola Oluwatosin',
+    name: 'Ukachi Wisdom',
     department: 'Business Administration',
-    contact: '08104448256',
+    contact: '08136077934',
   },
   {
     name: 'Adekunle Ayomide',
