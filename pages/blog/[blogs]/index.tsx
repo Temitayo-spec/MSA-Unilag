@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
