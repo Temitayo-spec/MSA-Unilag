@@ -71,3 +71,31 @@
   font-weight: 400;
   color: #999;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .society__card__img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .society__card__img h2 {
+    font-size: 1.5rem;
+  }
+
+  .society__card__content h3 {
+    font-size: 1.2rem;
+  }
+
+  .society__card__content p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
