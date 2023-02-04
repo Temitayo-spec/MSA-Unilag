@@ -44,7 +44,7 @@ const Dinner = () => {
           ''
         )
       }
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedId && (
           <motion.div
             className={`${styles.preview} ${
@@ -61,7 +61,7 @@ const Dinner = () => {
             </motion.button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Fest = () => {
       ) : (
         ''
       )}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedId && (
           <motion.div
             className={`${styles.preview} ${
@@ -53,7 +53,7 @@ const Fest = () => {
             </motion.button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };

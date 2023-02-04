@@ -39,7 +39,7 @@ const Studentpreneur = () => {
       ) : (
         ''
       )}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedId && (
           <motion.div
             className={`${styles.preview} ${
@@ -56,7 +56,7 @@ const Studentpreneur = () => {
             </motion.button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };

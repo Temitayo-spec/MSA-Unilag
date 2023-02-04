@@ -40,7 +40,7 @@ const Orientation = () => {
       ) : (
         ''
       )}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedId && (
           <motion.div
             className={`${styles.preview} ${
@@ -57,7 +57,7 @@ const Orientation = () => {
             </motion.button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };

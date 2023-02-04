@@ -36,7 +36,7 @@ const Career = () => {
       ) : (
         ''
       )}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedId && (
           <motion.div
             className={`${styles.preview} ${
@@ -53,7 +53,7 @@ const Career = () => {
             </motion.button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };
