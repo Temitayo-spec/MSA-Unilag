@@ -3,7 +3,8 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
-  z-index: 20;
+  left: 0;
+  z-index: 1000;
   background: #fff;
 }
 

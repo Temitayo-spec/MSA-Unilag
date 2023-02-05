@@ -5,11 +5,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 10000;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: modal 0.5s ease-in-out;
 }
 
 .inner {
@@ -24,7 +25,6 @@
   padding: 2em;
   overflow-y: auto;
   position: relative;
-  animation: modal 0.5s ease-in-out;
 }
 
 .inner::-webkit-scrollbar {
