@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,5 +79,12 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 90%;
+    height: 90%;
   }
 }
