@@ -18,7 +18,7 @@ const SectionSix = () => {
           <h1>
             MEET YOUR <br /> FACULTY <br /> LEADERS<span>.</span>
           </h1>
-          <Link href="/leadership/msa-executuives">
+          <Link href="/leadership/msa-executives">
             <button type="button">Leadership</button>
           </Link>
         </div>

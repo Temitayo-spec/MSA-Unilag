@@ -106,6 +106,7 @@ const Footer = () => {
             <motion.p variants={textVariants}>General Enquires</motion.p>
             <motion.p variants={textVariants}>+234 7039753128</motion.p>
             <motion.p variants={textVariants}>msaunilag22@gmail.com</motion.p>
+            <motion.p variants={textVariants}>msaunilag@outlook.com</motion.p>
           </motion.div>
         </motion.div>
         <div className={styles.footer__content__bottom}>
