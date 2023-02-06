@@ -74,10 +74,10 @@ const Page = () => {
             </div>
             <div className={styles.rhs}>
               <Link href="/gallery">
-                MSA Annual Entrpreneurship & Innovation Challenge
+                MSA Annual Entrepreneurship & Innovation Challenge
               </Link>
               <p>
-                The MSA Annual Entrpreneurship & Innovation Challenge is an
+                The MSA Annual Entrepreneurship & Innovation Challenge is an
                 annual event that brings together students and employers from
                 across the country. The event is a great opportunity for
                 students to meet with employers and learn about the various
