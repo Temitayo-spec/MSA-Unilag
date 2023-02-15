@@ -7,10 +7,25 @@ import Transition from '../../components/Transition';
 import Link from 'next/link';
 import { FaPencilAlt } from 'react-icons/fa';
 
-const Page = () => {
+export const getServerSideProps = async () => {
+  const res = await axios.get(
+    `${
+      process.env.NEXT_PUBLIC_NODE_ENV === 'development'
+        ? 'http://localhost:3000'
+        : 'https://msaunilag.com'
+    }/api/blog/all_blogs`
+  );
+
+  return {
+    props: {
+      blogData: res.data,
+    },
+  };
+};
+
+const Page = ({ blogData }: any) => {
   const blog = gsap.timeline();
   const blogCtn = useRef(null);
-  const [blogData, setBlogData] = useState([]);
 
   useEffect(() => {
     blog.to(
@@ -24,22 +39,6 @@ const Page = () => {
       },
       '-=0.5'
     );
-  }, []);
-
-  useEffect(() => {
-    const fetchBlog = async () => {
-      const res = await axios.get(
-        `${
-          process.env.NEXT_PUBLIC_NODE_ENV === 'development'
-            ? 'http://localhost:3000'
-            : 'https://msaunilag.com'
-        }/api/blog/all_blogs`
-      );
-
-      setBlogData(res.data);
-    };
-
-    fetchBlog();
   }, []);
 
   return (
