@@ -3,10 +3,11 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/SectionTwo.module.css';
 import { motion } from 'framer-motion';
-import Modal from '../Modal';
+import { useRecoilState } from 'recoil';
+import { modalAtom } from '../../atom/modalAtom';
 
 const SectonTwo = () => {
-  const [modal, setModal] = useState<boolean>(false);
+  const [_, setModal] = useRecoilState(modalAtom);
   const container = {
     hidden: { opacity: 1 },
     visible: {
@@ -37,7 +38,6 @@ const SectonTwo = () => {
   };
   return (
     <>
-      {modal && <Modal setModal={setModal} />}
       <div className={styles.wrapper}>
         <motion.div
           variants={imageVariants}
@@ -71,7 +71,7 @@ const SectonTwo = () => {
           </motion.p>
           <button
             onClick={() => {
-              setModal(true);
+              setModal((prev) => ({ ...prev, isOpen: true }));
             }}
             type="button"
           >

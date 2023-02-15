@@ -5,11 +5,20 @@ import gsap from 'gsap';
 import { motion } from 'framer-motion';
 import Transition from '../components/Transition';
 import Slider from '../components/Slider';
-import { SectionFive, SectionFour, SectionSix, SectionThree, SectionTwo } from '../components/Home';
+import {
+  SectionFive,
+  SectionFour,
+  SectionSix,
+  SectionThree,
+  SectionTwo,
+} from '../components/Home';
 import NewsLetter from '../components/Home/NewsLetter';
-
+import Modal from '../components/Modal';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { modalAtom } from '../atom/modalAtom';
 
 export default function Home() {
+  const [modal, setModal] = useRecoilState(modalAtom);
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -45,10 +54,11 @@ export default function Home() {
       },
       '-=0.5'
     );
-  });
+  }, []);
 
   return (
     <>
+      {modal.isOpen && <Modal setModal={setModal} />}
       <Transition timeline={home} text="Home" />
       <NewsLetter />
       <main ref={homeCtn} className={styles.main}>

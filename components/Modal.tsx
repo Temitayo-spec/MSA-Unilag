@@ -1,15 +1,23 @@
 import React from 'react';
+import { SetterOrUpdater } from 'recoil';
 import styles from '../styles/Modal.module.css';
 
 type Props = {
-  setModal: (modal: boolean) => any;
+  setModal: SetterOrUpdater<{ isOpen: boolean }>;
 };
 
 const Modal = ({ setModal }: Props) => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.inner}>
-        <button onClick={() => setModal(false)}>X</button>
+    <div
+      className={styles.wrapper}
+      onClick={() => setModal((prev) => ({ ...prev, isOpen: false }))}
+    >
+      <div className={styles.inner} onClick={(e) => e.stopPropagation()}>
+        <button
+          onClick={() => setModal((prev) => ({ ...prev, isOpen: false }))}
+        >
+          X
+        </button>
         <h1>Learning Begins With Us</h1>
         <p>
           Management Students Association; we are an independent
