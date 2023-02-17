@@ -1,5 +1,12 @@
 export const cardData = [
   {
+    src: '/images/MSA-studentpreneurship/studentpreneur-10.jpg',
+    title: 'Studentpreneurship Programme',
+    description:
+      'The MSA Annual Entrepreneurship & Innovation Challenge is an annual event that brings together students and employers from across the country. The event is a great opportunity for students to meet with employers and learn about the various career opportunities available to them.',
+    alt: 'Studentpreneur',
+  },
+  {
     src: '/images/deans-cup.jpg',
     title: "Dean's Cup",
     description:
