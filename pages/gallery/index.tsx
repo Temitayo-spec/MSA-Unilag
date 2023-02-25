@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
 import gsap from 'gsap';
 import Transition from '../../components/Transition';
-import { Career, Dinner, Exco, Faculty, Fest, Orientation, Studentpreneur } from '../../components/Gallery';
+import { Career, DeansCup, Dinner, Exco, Faculty, Fest, Orientation, Studentpreneur } from '../../components/Gallery';
 
 const Page = () => {
   const gallery = gsap.timeline();
@@ -32,6 +32,7 @@ const Page = () => {
           </header>
 
           <div className={styles.content}>
+            <DeansCup />
             <Orientation />
             <Career />
             <Studentpreneur />

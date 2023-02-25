@@ -1,27 +1,23 @@
 import React, { useState } from 'react';
 import styles from '../../pages/gallery/page.module.css';
 import Image from 'next/image';
-import { orientationData } from '../../components/Data/GalleryData';
+import { deansCupData } from '../Data/GalleryData';
 
-const Orientation = () => {
+const Career = () => {
   const [viewAll, setViewAll] = useState<boolean>(false);
 
   return (
     <div className={styles.exco__gallery}>
-      <h1>MSA Orientation Day</h1>
+      <h1>MSA Dean&apos;s Cup</h1>
       <p>
-        “Orientation is the process of acclimatizing freshers to the new
-        environment and the new culture of the university. It is a process of
-        familiarizing the freshers with the university and its environment.” —
-        Dr. A. K. Singh
+        “The best way to predict the future is to create it.” — Abraham Lincoln
       </p>
-
       <button onClick={() => setViewAll(!viewAll)} className={styles.btn}>
         {viewAll ? 'View Less' : 'View All'}
       </button>
       {viewAll ? (
         <div className={styles.gallery__ctn}>
-          {orientationData.map((item, index) => {
+          {deansCupData.map((item, index) => {
             return (
               <div className={styles.gallery__img} key={index}>
                 <Image src={item.src} alt="images" height={500} width={400} />
@@ -36,4 +32,4 @@ const Orientation = () => {
   );
 };
 
-export default Orientation;
+export default Career;

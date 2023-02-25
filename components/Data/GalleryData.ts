@@ -327,3 +327,72 @@ export const festData: IFaculty[] = [
     src: '/images/MSA-fest/msa_fest_18.jpg',
   },
 ];
+
+export const deansCupData: IFaculty[] = [
+  {
+    src: '/images/deans_cup/deans_1.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_2.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_3.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_4.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_5.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_6.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_7.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_8.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_9.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_10.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_11.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_12.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_13.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_14.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_15.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_16.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_17.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_18.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_19.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_20.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_21.jpg',
+  },
+  {
+    src: '/images/deans_cup/deans_22.jpg',
+  },
+];

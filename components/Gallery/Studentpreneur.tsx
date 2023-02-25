@@ -6,9 +6,7 @@ import { FaTimes } from 'react-icons/fa';
 import { studentpreneurData } from '../../components/Data/GalleryData';
 
 const Studentpreneur = () => {
-  const [selectedId, setSelectedId] = useState<string>('');
   const [viewAll, setViewAll] = useState<boolean>(false);
-
 
   return (
     <div className={styles.exco__gallery}>
@@ -26,12 +24,7 @@ const Studentpreneur = () => {
           {studentpreneurData.map((item, index) => {
             return (
               <div className={styles.gallery__img} key={index}>
-                <motion.div
-                  layoutId={item.src}
-                  onClick={() => setSelectedId(item.src)}
-                >
-                  <Image src={item.src} alt="images" height={500} width={400} />
-                </motion.div>
+                <Image src={item.src} alt="images" height={500} width={400} />
               </div>
             );
           })}
@@ -39,24 +32,6 @@ const Studentpreneur = () => {
       ) : (
         ''
       )}
-      {/* <AnimatePresence>
-        {selectedId && (
-          <motion.div
-            className={`${styles.preview} ${
-              selectedId ? styles.preview__active : ''
-            }`}
-            layoutId={selectedId}
-          >
-            <Image src={selectedId} alt="images" height={500} width={400} />
-            <motion.button
-              className={styles.cancel__btn}
-              onClick={() => setSelectedId('')}
-            >
-              <FaTimes className={styles.icon} />
-            </motion.button>
-          </motion.div>
-        )}
-      </AnimatePresence> */}
     </div>
   );
 };

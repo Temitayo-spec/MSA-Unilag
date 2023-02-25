@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../../pages/gallery/page.module.css';
 import Image from 'next/image';
-import { FaTimes } from 'react-icons/fa';
 import { careerExpoData } from '../Data/GalleryData';
 
 const Career = () => {
@@ -23,12 +21,7 @@ const Career = () => {
           {careerExpoData.map((item, index) => {
             return (
               <div className={styles.gallery__img} key={index}>
-                <motion.div
-                  layoutId={item.src}
-                  onClick={() => setSelectedId(item.src)}
-                >
-                  <Image src={item.src} alt="images" height={500} width={400} />
-                </motion.div>
+                <Image src={item.src} alt="images" height={500} width={400} />
               </div>
             );
           })}

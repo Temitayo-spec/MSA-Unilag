@@ -5,3 +5,4 @@ export { default as Faculty } from './Faculty';
 export { default as Orientation } from './Orientation';
 export { default as Studentpreneur } from './Studentpreneur';
 export { default as Fest } from './Fest';
+export { default as DeansCup } from './DeansCup';
